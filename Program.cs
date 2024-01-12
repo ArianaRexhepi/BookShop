@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
@@ -8,6 +10,26 @@ var connectionString = builder.Configuration.GetConnectionString("MySqlConnectio
 
 builder.Services.AddDbContext<ApplicationDbContext>(options => 
 options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+
+var host = CreateHostBuilder(args).Build();
+
+using(var scope = host.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+
+    try
+    {
+        SeedData.Initialize(services);
+    }
+    catch(Exception ex)
+    {
+        var logger = services.GetRequiredService<ILogger<Program>>();
+        logger.LogError(ex, "An error occured while attempting to seed the database!");
+    }
+}
+
+host.Run();
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
