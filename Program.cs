@@ -14,14 +14,6 @@ var connectionString = builder.Configuration.GetConnectionString("MySqlConnectio
 builder.Services.AddDbContext<ApplicationDbContext>(options => 
 options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
-var scope = app.Services.CreateScope();
-var services = scope.ServiceProvider;
-
-var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
-var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
-await Seed.SeedAdminAsync(userManager, roleManager);
-
-
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
@@ -45,6 +37,14 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+
+var scope = app.Services.CreateScope();
+var services = scope.ServiceProvider;
+
+var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
+var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+await Seed.SeedAdminAsync(userManager, roleManager);
 
 app.Run();
 
