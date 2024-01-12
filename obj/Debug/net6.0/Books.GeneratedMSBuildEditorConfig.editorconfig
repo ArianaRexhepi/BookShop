@@ -16,24 +16,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/els/Desktop/books/Books/Books
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Books/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9va3MvQ3JlYXRlLmNzaHRtbA==
+[/Users/els/Desktop/books/Books/Books/Views/Book/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9vay9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Books/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9va3MvRGVsZXRlLmNzaHRtbA==
+[/Users/els/Desktop/books/Books/Books/Views/Book/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9vay9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Books/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9va3MvRGV0YWlscy5jc2h0bWw=
+[/Users/els/Desktop/books/Books/Books/Views/Book/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9vay9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Books/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9va3MvRWRpdC5jc2h0bWw=
+[/Users/els/Desktop/books/Books/Books/Views/Book/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9vay9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Books/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9va3MvSW5kZXguY3NodG1s
+[/Users/els/Desktop/books/Books/Books/Views/Book/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9vay9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/els/Desktop/books/Books/Books/Views/Home/Index.cshtml]

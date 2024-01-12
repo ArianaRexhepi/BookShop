@@ -12,6 +12,7 @@ using Books.Models;
             : base(options)
         {
         }
+        public DbSet<Book> Book { get; set; }
 
-        public DbSet<Books.Models.Books> Books { get; set; }
+        
     }
