@@ -298,3 +298,8 @@
 /Users/els/Desktop/books/Books/Books/obj/Debug/net6.0/Books.pdb
 /Users/els/Desktop/books/Books/Books/obj/Debug/net6.0/Books.genruntimeconfig.cache
 /Users/els/Desktop/books/Books/Books/obj/Debug/net6.0/ref/Books.dll
+/Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
+/Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll
