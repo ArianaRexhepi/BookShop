@@ -54,6 +54,7 @@
 /Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 /Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 /Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+/Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/MySqlConnector.dll
 /Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Newtonsoft.Json.dll
 /Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/NuGet.Common.dll
 /Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/NuGet.Configuration.dll
@@ -64,6 +65,7 @@
 /Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/NuGet.ProjectModel.dll
 /Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/NuGet.Protocol.dll
 /Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/NuGet.Versioning.dll
+/Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Pomelo.EntityFrameworkCore.MySql.dll
 /Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/SQLitePCLRaw.batteries_v2.dll
 /Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/SQLitePCLRaw.core.dll
 /Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll
