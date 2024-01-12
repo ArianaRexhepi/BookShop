@@ -1,3 +1,5 @@
+using Books.Data;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,24 +13,12 @@ var connectionString = builder.Configuration.GetConnectionString("MySqlConnectio
 builder.Services.AddDbContext<ApplicationDbContext>(options => 
 options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
-var host = CreateHostBuilder(args).Build();
+var scope = app.Services.CreateScope();
+var services = scope.ServiceProvider;
 
-using(var scope = host.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
-
-    try
-    {
-        SeedData.Initialize(services);
-    }
-    catch(Exception ex)
-    {
-        var logger = services.GetRequiredService<ILogger<Program>>();
-        logger.LogError(ex, "An error occured while attempting to seed the database!");
-    }
-}
-
-host.Run();
+var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
+var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+await Seed.SeedAdminAsync(userManager, roleManager);
 
 
 // Add services to the container.
