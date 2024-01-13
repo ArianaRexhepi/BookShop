@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 namespace Books.Models
 {
-	public class Book
+	public class Books
 	{
 		[Required]
 		public int Id { get; set; }
@@ -20,10 +20,10 @@ namespace Books.Models
 		Display(Name = "Date Time")]
 		public DateTime DatePublished { get; set;}
 		[Required,
-		DataType(DataType.Currency),]
-		public int Price { get; set;}
-		[Display(Name = "Image")]
-		public string Image { get; set;}
+        DisplayFormat(DataFormatString = "{0:C}")]
+        public decimal Price { get; set; }
+        [Display(Name = "Image")]
+		public string? Image { get; set;}
 
 	}
 }

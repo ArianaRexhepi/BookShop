@@ -5,22 +5,16 @@
 
     string hasImage(Book book)
     {
-        if(book.Image != "")
+        if (!string.IsNullOrEmpty(book.Image))
         {
-            return "fa-solid fa-check";
+            return "fas fa-check"; 
         }
         else
         {
-            return "fa-solid fa-x";
+            return "fas fa-times"; 
         }
     }
 }
-
-<style>
-    .custom-btn {
-    margin-right: 8px;
-}
-</style>
 
 
 <div class="content text-center">
