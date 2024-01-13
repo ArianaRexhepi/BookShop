@@ -9,6 +9,10 @@
 /Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Humanizer.dll
 /Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/MessagePack.dll
 /Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/MessagePack.Annotations.dll
+/Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.UI.dll
 /Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.AspNetCore.Razor.Language.dll
 /Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.Build.Locator.dll
@@ -39,6 +43,9 @@
 /Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
 /Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
 /Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.Extensions.DependencyModel.dll
+/Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.Extensions.FileProviders.Embedded.dll
+/Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
+/Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll
 /Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.Identity.Client.dll
 /Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
 /Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
@@ -279,6 +286,7 @@
 /Users/els/Desktop/books/Books/Books/obj/Debug/net6.0/Books.AssemblyInfoInputs.cache
 /Users/els/Desktop/books/Books/Books/obj/Debug/net6.0/Books.AssemblyInfo.cs
 /Users/els/Desktop/books/Books/Books/obj/Debug/net6.0/Books.csproj.CoreCompileInputs.cache
+/Users/els/Desktop/books/Books/Books/obj/Debug/net6.0/Books.MvcApplicationPartsAssemblyInfo.cs
 /Users/els/Desktop/books/Books/Books/obj/Debug/net6.0/Books.MvcApplicationPartsAssemblyInfo.cache
 /Users/els/Desktop/books/Books/Books/obj/Debug/net6.0/Books.RazorAssemblyInfo.cache
 /Users/els/Desktop/books/Books/Books/obj/Debug/net6.0/Books.RazorAssemblyInfo.cs
@@ -298,8 +306,3 @@
 /Users/els/Desktop/books/Books/Books/obj/Debug/net6.0/Books.pdb
 /Users/els/Desktop/books/Books/Books/obj/Debug/net6.0/Books.genruntimeconfig.cache
 /Users/els/Desktop/books/Books/Books/obj/Debug/net6.0/ref/Books.dll
-/Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
-/Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-/Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-/Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
-/Users/els/Desktop/books/Books/Books/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll
