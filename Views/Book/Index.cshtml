@@ -43,7 +43,8 @@
                 <td>@Html.DisplayFor(modelItem => item.Description)</td>
                 <td>@Html.DisplayFor(modelItem => item.ISBN)</td>
                 <td>@Html.DisplayFor(modelItem => item.DatePublished)</td>
-                <td>@Html.DisplayFor(modelItem => item.Price)</td>
+               <td>@(item.Price >= 0 ? string.Format("€{0:N2}", item.Price) : "No price available")</td>
+
                 <td><i class="@hasImage(item)"></i></td>
                 <td>
                     <div class="mr-2" role="group">
