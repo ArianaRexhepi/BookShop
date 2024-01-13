@@ -25,4 +25,10 @@
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.2" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.1" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Store\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Store\" />
+  </ItemGroup>
 </Project>

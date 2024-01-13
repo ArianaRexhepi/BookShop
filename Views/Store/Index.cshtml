@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Books.Models.Book>
+
+@{
+        ViewData["Title"] = "Store";
+    }
+
+<h2 class="my-4">Store</h2>
+<div class="row">
+    @foreach(var book in Model)
+    {
+        <div class="col-3">
+            <div class="card">
+                <a asp-controller="Store" asp-action="Details" asp-route="@book.Id">
+                    <img src="@book.Image" class="card-img-top">
+                    <div class= 
+                </a>
+            </div>
+        </div>
+    }
+
+</div>
