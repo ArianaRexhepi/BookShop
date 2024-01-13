@@ -44,11 +44,21 @@
                 <td>@Html.DisplayFor(modelItem => item.Description)</td>
                 <td>@Html.DisplayFor(modelItem => item.ISBN)</td>
                 <td>@Html.DisplayFor(modelItem => item.DatePublished)</td>
-                <td>@Html.DisplayFor(modelItem => item.Price)</td>
+                <td>
+                    @if (item.Price != null)
+                    {
+                        <span>@string.Format("€{0:N2}", item.Price)</span>
+                    }
+                    else
+                    {
+                        <span>No price available</span>
+                    }
+                </td>
+
                 <td><i class="@hasImage(item)"></i></td>
                 <td>
                     <div class="btn-group mr-2" role="group">
-                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning" >
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">
                             <i class="fas fa-edit"></i> Edit
                         </a>
                         <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">

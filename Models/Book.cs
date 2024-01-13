@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 namespace Books.Models
 {
-	public class Books
+	public class Book
 	{
 		[Required]
 		public int Id { get; set; }
