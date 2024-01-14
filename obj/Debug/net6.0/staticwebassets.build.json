@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "A6QVc1lQu05+130h+f9rQrvY0WCBKh2c7WFXCJ4/ZE0=",
+  "Hash": "fSq8Euq4ObVMQ0P6gyfl8JKavKCpBIKuDxTqQ5Q1uGI=",
   "Source": "Books",
   "BasePath": "_content/Books",
   "Mode": "Default",
@@ -1086,23 +1086,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/site.css"
-    },
-    {
-      "Identity": "/Users/els/Desktop/books/Books/Books/wwwroot/css/style.css",
-      "SourceId": "Books",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/els/Desktop/books/Books/Books/wwwroot/",
-      "BasePath": "_content/Books",
-      "RelativePath": "css/style.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/style.css"
     },
     {
       "Identity": "/Users/els/Desktop/books/Books/Books/wwwroot/favicon.ico",
