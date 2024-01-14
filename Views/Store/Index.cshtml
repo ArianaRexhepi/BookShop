@@ -4,27 +4,28 @@
     ViewData["Title"] = "Bookstore";
 }
 
-<div class="container my-5">
-    <h2 class="text-center mb-4">Explore Our Book Collection</h2>
+<link rel="stylesheet" href="~/css/styles.css">
 
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="book-container">
+    <h2 class="book-heading">Explore Our Book Collection</h2>
+
+    <div class="book-grid">
         @foreach (var book in Model)
         {
-            <div class="col">
-                <div class="card h-100 border-0">
-                    <img src="@book.Image" class="card-img-top" alt="Book Image">
-                    <div class="card-body">
-                        <h5 class="card-title">@book.Title</h5>
-                        <p class="card-text">Price: @book.Price.ToString("C")</p>
-                    </div>
-                    <div class="card-footer bg-transparent d-flex justify-content-end border-0">
-                        <a asp-controller="Store" asp-action="Details" asp-route-id="@book.Id" class="btn btn-outline-primary">
-                            View Details
-                        </a>
-                        <a asp-controller="Cart" asp-action="AddToCart" asp-route-id="@book.Id" class="btn btn-primary ms-2">
-                            Add to Cart
-                        </a>
-                    </div>
+            <div class="book-card">
+                <img src="@book.Image" class="book-image" alt="Book Image">
+                <div class="book-details">
+                    <h3 class="book-title">@book.Title</h3>
+                    <p class="book-author">By: @book.Author</p>
+                    <p class="book-price">Price: @book.Price.ToString("C")</p>
+                </div>
+                <div class="book-actions">
+                    <a asp-controller="Store" asp-action="Details" asp-route-id="@book.Id" class="btn btn-outline-primary">
+                        View Details
+                    </a>
+                    <a asp-controller="Cart" asp-action="AddToCart" asp-route-id="@book.Id" class="btn btn-primary ms-2">
+                        Add to Cart
+                    </a>
                 </div>
             </div>
         }

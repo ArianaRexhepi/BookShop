@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
+      "Id": "/Users/els/Desktop/books/Books/Books/wwwroot/css/style.css",
+      "PackagePath": "staticwebassets/css/style.css"
+    },
+    {
       "Id": "/Users/els/Desktop/books/Books/Books/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },
