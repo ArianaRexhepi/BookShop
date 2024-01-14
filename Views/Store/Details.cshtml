@@ -39,14 +39,15 @@
             </dl>
         </div>
         <div class="card-footer text-right">
-            <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning">Edit</a>
-            <a asp-action="Index" class="btn btn-danger">Dismiss</a>
+            <a asp-action="Index" class="btn btn-secondary"><i class="fa-solid fa-arrow-left"></i> Go Back</a>
+            <a asp-action="" asp-route-id="@Model.Id" class="btn btn-primary store-btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
         </div>
     </div>
-    <div class="col-4"></div>
+    <div class="col-4">
     <dt class="col-sm-3 text-right"></dt>
     <dd class="col-sm-9">
         <img src="@Model.Image" class="w-100" />
     </dd>
+    </div>
 </div>
 </div>
