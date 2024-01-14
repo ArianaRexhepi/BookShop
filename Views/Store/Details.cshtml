@@ -27,15 +27,14 @@
                     </p>
                     <hr class="my-4">
                     <p class="card-text">
-                        <strong>ISBN:</strong> @Model.ISBN<br />
-                        <strong>Date Published:</strong> @Model.DatePublished.ToShortDateString()<br />
-                        <hr/>
-                        <strong>Description:</strong> @Model.Description
+                        <strong>ISBN & Date Published:</strong> <span class="text-muted">@Model.ISBN,
+                            @Model.DatePublished.ToShortDateString()</span><br />
+                        <strong>Description:</strong> <span class="text-muted">@Model.Description</span>
                     </p>
                 </div>
-                <div class="card-footer bg-light d-flex justify-content-between">
-                    <a asp-action="Index" class="btn btn-outline-secondary"><i class="fa-solid fa-arrow-left"></i> Go Back</a>
-                    <a asp-action="" asp-route-id="@Model.Id" class="btn btn-outline-primary store-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
+                <div class="card-footer d-flex float-right">
+                    <a asp-action="" asp-route-id="@Model.Id" class="btn btn-outline-primary store-btn"><i
+                            class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
                 </div>
             </div>
         </div>
