@@ -233,6 +233,7 @@
                 <img src="@book.Image" alt="Book Image">
                 <div class="card-body">
                     <h5 class="card-title">@book.Title</h5>
+                    <p class="card-test">By @book.Author</p>
                     <p class="card-text">Price: @string.Format("€{0:N2}", book.Price)</p>
                     <div class="card-actions">
                         <a asp-controller="" asp-action="" asp-route-id="@book.Id" class="btn btn-primary">
