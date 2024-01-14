@@ -5,7 +5,7 @@
 }
 
 <style>
-.h2{
+.h5{
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: auto;
@@ -19,8 +19,8 @@
 }
 
 .book-card {
-  width: 200px;
-  height: 400px; /* Increase the height of the container */
+  width: 230px;
+  height: 530px; 
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -35,7 +35,7 @@
 
 .book-card-image {
   width: 100%;
-  height: 70%; /* Adjust the height of the image */
+  height: 60%; 
   object-fit: cover;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -54,29 +54,34 @@
   margin-top: 8px;
   color: #555555;
 }
+.book-price {
+        font-weight: bold;
+        color: #2ecc71;
+    }
+
+ .book-actions {
+        padding: 15px;
+        text-align: center;
+    }
 </style>
 
 <link rel="stylesheet" href="~/css/styles.css">
 
-<h2 class="book-heading">Explore Our Book Collection</h2>
+<h2>Explore Our Book Collection</h2>
 <div className="book-container">
-    <div class="book-grid">
         @foreach (var book in Model)
         {
             <div class="book-card">
                 <a asp-controller="Store" asp-action="Details" asp-route-id="@book.Id">
                 <img src="@book.Image" class="book-card-image" alt="Book Image">
                 <div class="book-card-details">
-                    <h3 class="book-title">@book.Title</h3>
-                    <p class="book-card-author">By: @book.Author</p>
-                    <p class="book-card-price">Price: @book.Price.ToString("C")</p>
-                </div>
-                <div class="book-actions">
+                    <h5 class="book-title">@book.Title</h5>
+                    <p class="book-price">Price: @book.Price.ToString("C")</p>
                     <a asp-controller="Cart" asp-action="AddToCart" asp-route-id="@book.Id" class="btn btn-primary ms-2">
                         Add to Cart
                     </a>
+                </div>
                     </a>
                 </div>
         }
-    </div>
 </div>
