@@ -1,0 +1,52 @@
+﻿@model Books.Models.Book
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Book Details</h1>
+
+<div class="row">
+    <div class="col-5">
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3 text-right">Title:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Title)</dd>
+
+                <dt class="col-sm-3 text-right">Author:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Author)</dd>
+
+                <dt class="col-sm-3 text-right">Description:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Description)</dd>
+
+                <dt class="col-sm-3 text-right">ISBN:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.ISBN)</dd>
+
+                <dt class="col-sm-3 text-right">Date Published</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.DatePublished)</dd>
+
+                <dt class="col-sm-3 text-right">Price</dt>
+                <dd class="col-sm-9">
+                    @if (Model?.Price != null)
+                    {
+                        <span>@string.Format("€{0:N2}", Model.Price)</span>
+                    }
+                    else
+                    {
+                        <span>No price available</span>
+                    }
+                </dd>
+            </dl>
+        </div>
+        <div class="card-footer text-right">
+            <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning">Edit</a>
+            <a asp-action="Index" class="btn btn-danger">Dismiss</a>
+        </div>
+    </div>
+    <div class="col-4"></div>
+    <dt class="col-sm-3 text-right"></dt>
+    <dd class="col-sm-9">
+        <img src="@Model.Image" class="w-100" />
+    </dd>
+</div>
+</div>
