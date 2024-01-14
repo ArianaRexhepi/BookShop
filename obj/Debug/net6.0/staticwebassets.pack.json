@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/Books.bundle.scp.css"
     },
     {
+      "Id": "/Users/els/Desktop/books/Books/Books/wwwroot/css/myCss.css",
+      "PackagePath": "staticwebassets/css/myCss.css"
+    },
+    {
       "Id": "/Users/els/Desktop/books/Books/Books/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

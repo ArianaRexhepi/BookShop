@@ -3,9 +3,6 @@
 @{
     ViewData["Title"] = "Bookstore";
 }
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
 
 
 <style>
@@ -148,7 +145,7 @@
         const searchResults = [];
 
         const fetchData = async () => {
-            const res = await axios.get("http://localhost:5267/api/book");
+            const res = await axios.get("/book");
             books.push(...res.data);
             console.log("books", res.data);
             updateBookContainer();
@@ -159,15 +156,18 @@
         $('#searchInput').on('input', handleSearch);
 
         function handleSearch() {
-            const searchTerm = $('#searchInput').val().toLowerCase();
-            searchResults.length = 0;
+    const searchTerm = $('#searchInput').val().toLowerCase();
+    searchResults.length = 0;
 
-            if (searchTerm.trim() !== '') {
-                searchResults.push(...books.filter(book => book.title.toLowerCase().includes(searchTerm)));
-            }
+    if (searchTerm.trim() !== '') {
+        searchResults.push(...books.filter(book => 
+            book.title && book.title.toLowerCase().includes(searchTerm)
+        ));
+    }
 
-            updateBookContainer();
-        }
+    updateBookContainer();
+}
+
 
         function updateBookContainer() {
             const bookContainer = $('#bookContainer');
@@ -229,7 +229,7 @@
     @foreach (var book in Model)
     {
         <div class="card">
-            <a asp-controller="Store" asp-action="Details" asp-route-id="@book.Id">
+            <a class="a-cleanup" asp-controller="Store" asp-action="Details" asp-route-id="@book.Id">
                 <img src="@book.Image" alt="Book Image">
                 <div class="card-body">
                     <h5 class="card-title">@book.Title</h5>

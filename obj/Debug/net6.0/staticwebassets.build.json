@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fSq8Euq4ObVMQ0P6gyfl8JKavKCpBIKuDxTqQ5Q1uGI=",
+  "Hash": "5BWcXPtP4Ru8IjYdg4jYQpSAbpk2gv5ZZSL8h7GpfA4=",
   "Source": "Books",
   "BasePath": "_content/Books",
   "Mode": "Default",
@@ -1069,6 +1069,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/els/Desktop/books/Books/Books/obj/Debug/net6.0/scopedcss/projectbundle/Books.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/els/Desktop/books/Books/Books/wwwroot/css/myCss.css",
+      "SourceId": "Books",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/els/Desktop/books/Books/Books/wwwroot/",
+      "BasePath": "_content/Books",
+      "RelativePath": "css/myCss.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/myCss.css"
     },
     {
       "Identity": "/Users/els/Desktop/books/Books/Books/wwwroot/css/site.css",

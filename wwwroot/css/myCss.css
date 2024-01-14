@@ -1,0 +1,9 @@
+.a-cleanup{
+    color:inherit;
+    text-decoration: none;
+}
+
+.a-cleanup:hover{
+    text-decoration: none;
+    color: inherit;
+}
