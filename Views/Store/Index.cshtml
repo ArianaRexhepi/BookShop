@@ -4,26 +4,95 @@
     ViewData["Title"] = "Bookstore";
 }
 
-<h2 class="my-4">Explore Our Book Collection</h2>
+<style>
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-<div class="row">
+    .card {
+        width: 15%;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        margin-bottom: 20px;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .card-body {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-title {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .card-text {
+        color: black;
+        text-decoration: none;
+        margin-bottom: 8px;
+    }
+
+    .card-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #3498db;
+        border: 2px solid #3498db;
+    }
+
+    .btn-primary:hover {
+        background-color: #2980b9;
+        border: 2px solid #2980b9;
+    }
+</style>
+
+<h2 class="my-4 text-align-center">Explore Our Book Collection</h2>
+
+<div class="card-container">
     @foreach (var book in Model)
     {
-        <div class="col-2">
-            <div class="card">
-                <a asp-controller="Store" asp-action="Details" asp-route-id="@book.Id">
-                    <img src="@book.Image" class="card-img-top">
-                    <div class="card-body" style="height: 6em;">
-                        <h5 class="mb-3">@book.Title</h5>
-                    </div>
-                    <div class="card-body">
-                        <span class="card-text">Price: @book.Price.ToString("C")</span>
-                        <a asp-controller="" asp-action="" asp-route-id="@book.Id" class="btn btn-primary float-right">
-                            <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+        <div class="card">
+            <a asp-controller="Store" asp-action="Details" asp-route-id="@book.Id">
+                <img src="@book.Image" alt="Book Image">
+                <div class="card-body">
+                    <h5 class="card-title">@book.Title</h5>
+                    <p class="card-text">Price: @string.Format("€{0:N2}", book.Price)</p>
+                    <div class="card-actions">
+                        <a asp-controller="" asp-action="" asp-route-id="@book.Id" class="btn btn-primary">
+                            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
                         </a>
                     </div>
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
     }
 </div>
