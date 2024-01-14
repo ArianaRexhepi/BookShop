@@ -8,6 +8,7 @@
     .card-container {
         display: flex;
         flex-wrap: wrap;
+        gap:35px
     }
 
     .card {
@@ -27,7 +28,8 @@
 
     .card img {
         width: 100%;
-        height: auto;
+        height: 300px;
+        object-fit: cover;
         border-bottom: 1px solid #ddd;
     }
 
@@ -35,6 +37,7 @@
         padding: 15px;
         display: flex;
         flex-direction: column;
+        
     }
 
     .card-title {
@@ -55,7 +58,7 @@
     }
 
     .btn {
-        padding: 10px 20px;
+        margin-top: 20px;
         text-align: center;
         text-decoration: none;
         font-size: 16px;
@@ -65,13 +68,11 @@
 
     .btn-primary {
         color: #fff;
-        background-color: #3498db;
-        border: 2px solid #3498db;
     }
 
     .btn-primary:hover {
-        background-color: #2980b9;
-        border: 2px solid #2980b9;
+        background-color: #1a3446;
+        border: 2px solid #1a3446;
     }
 </style>
 
