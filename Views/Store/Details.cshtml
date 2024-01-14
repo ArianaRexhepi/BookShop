@@ -12,25 +12,33 @@
             </div>
             <div class="col-md-8">
                 <div class="card-body">
-                    <h1 class="card-title">@Model.Title</h1>
-                    <p class="card-text">
-                        <strong>Author:</strong> @Model.Author<br />
-                        <strong>Price:</strong>
+                    <h2 class="card-title">@Model.Title</h2>
+                        <h5 class="card-title">
+                        <strong>Author:</strong> @Model.Author
+                        </h5>
+                        <p class="text-muted">Description:</p> @Model.Description</p>
+                    <hr class="my-4">
+                     <h5 class="card-text">Price:
                         @if (Model?.Price != null)
                         {
-                            <span>@string.Format("€{0:N2}", Model.Price)</span>
+                            <span><strong>@string.Format("€{0:N2}", Model.Price)</strong></span>
                         }
                         else
                         {
                             <span>No price available</span>
                         }
-                    </p>
-                    <hr class="my-4">
+                    </h5>
                     <p class="card-text">
-                        <strong>ISBN & Date Published:</strong> <span class="text-muted">@Model.ISBN,
-                            @Model.DatePublished.ToShortDateString()</span><br />
-                        <strong>Description:</strong> <span class="text-muted">@Model.Description</span>
-                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="text-muted">ISBN: <span >@Model.ISBN</span></p> 
+                        </div>
+                        <div class="col-md-6 text-md-end">
+                            <p class="text-muted">Date Published:  <span>@Model.DatePublished.ToShortDateString()</span></p> 
+                           
+                        </div>
+                    </div>
+                    <hr/>
                 </div>
                 <div class="card-footer d-flex float-right">
                     <a asp-action="" asp-route-id="@Model.Id" class="btn btn-outline-primary store-btn"><i
