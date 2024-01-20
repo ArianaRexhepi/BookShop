@@ -12,38 +12,43 @@
             </div>
             <div class="col-md-8">
                 <div class="card-body">
-                    <h2 class="card-title">@Model.Title</h2>
-                        <h5 class="card-title">
+                    <h2 class="card-title mt-3">@Model.Title</h2>
+                    <h5 class="card-title mt-3">
                         <strong>Author:</strong> @Model.Author
-                        </h5>
-                        <p class="text-muted">Description:</p> @Model.Description</p>
-                    <hr class="my-4">
-                     <h5 class="card-text">Price:
-                        @if (Model?.Price != null)
-                        {
-                            <span><strong>@string.Format("€{0:N2}", Model.Price)</strong></span>
-                        }
-                        else
-                        {
-                            <span>No price available</span>
-                        }
                     </h5>
+                    <p class="text-muted mt-5">Description:</p> @Model.Description</p>
+                    <p class="my-4">
                     <p class="card-text">
-                    <div class="row">
+                    <div class="d-flex flex-column align-items-end mt-5">
+                        <h6 class="card-text text-right">
+                            Price:
+                            @if (Model?.Price != null)
+                                    {
+                                <span><strong>@string.Format("€{0:N2}", Model.Price)</strong></span>
+                                    }
+                                    else
+                                    {
+                                <span>No price available</span>
+                                    }
+                        </h6>
+                        <a asp-action="" asp-route-id="@Model.Id" class="btn btn-outline-primary store-btn">
+                            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                        </a>
+                    </div>
+                    <div class="row mt-5">
                         <div class="col-md-6">
-                            <p class="text-muted">ISBN: <span >@Model.ISBN</span></p> 
+                            <p class="text-muted">ISBN: <span>@Model.ISBN</span></p>
                         </div>
                         <div class="col-md-6 text-md-end">
-                            <p class="text-muted">Date Published:  <span>@Model.DatePublished.ToShortDateString()</span></p> 
-                           
+                            <p class="text-muted">Date Published: <span>@Model.DatePublished.ToShortDateString()</span>
+                            </p>
+
                         </div>
                     </div>
-                    <hr/>
                 </div>
-                <div class="card-footer d-flex float-right">
-                    <a asp-action="" asp-route-id="@Model.Id" class="btn btn-outline-primary store-btn"><i
-                            class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
-                </div>
+
+
+
             </div>
         </div>
     </div>
