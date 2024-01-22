@@ -29,6 +29,32 @@ namespace Books.Models
             return new Cart(context) { Id = cartId };
         }
 
+        public CartItem GetCartItem(Book book)
+        {
+            return _context.CartItems.SingleOrDefault(ci => ci.Book.Id == book.Id && ci.CartId == Id);
+        }
+
+        public void AddToCart(Book book, int quantity)
+        {
+            var cartItem = GetCartItem(book);
+
+            if(cartItem = null)
+            {
+                cartItem = new CartItem
+                {
+                    Book = book,
+                    Quantity = quantity,
+                    CartId = Id
+                };
+
+                _context.CartItems.Add(cartItem);
+            }
+            else
+            {
+                cartItem.Quantity += quantity;
+            }
+            _context.SaveChanges();
+        }
         public List<CartItem> GetAllCartItems()
         {
             return CartItems ??
@@ -39,10 +65,10 @@ namespace Books.Models
 
         public int GetCartTotal()
         {
-           return (int)_context.CartItems
-        .Where(ci => ci.CartId == Id)
-        .Select(ci => ci.Book.Price * ci.Quantity)
-        .Sum();
+            return (int)_context.CartItems
+                .Where(ci => ci.CartId == Id)
+                .Select(ci => ci.Book.Price * ci.Quantity)
+                .Sum();
         }
 
 
