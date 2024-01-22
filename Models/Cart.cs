@@ -14,8 +14,8 @@ namespace Books.Models
         {
             _context = context;
         }
-        public string Id { get; set;}
-        public List<CartItem> CartItems {get; set;}
+        public string Id { get; set; }
+        public List<CartItem> CartItems { get; set; }
 
         public static Cart GetCart(IServiceProvider services)
         {
@@ -26,7 +26,7 @@ namespace Books.Models
 
             session.SetString("Id", cartId);
 
-            return new Cart(context){ Id = cartId };
+            return new Cart(context) { Id = cartId };
         }
 
         public List<CartItem> GetAllCartItems()
@@ -36,5 +36,16 @@ namespace Books.Models
                     .Include(ci => ci.Book)
                     .ToList());
         }
+
+        public int GetCartTotal()
+        {
+           return (int)_context.CartItems
+        .Where(ci => ci.CartId == Id)
+        .Select(ci => ci.Book.Price * ci.Quantity)
+        .Sum();
+        }
+
+
+
     }
 }

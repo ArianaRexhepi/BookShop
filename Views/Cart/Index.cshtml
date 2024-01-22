@@ -5,8 +5,49 @@
 @if(Model.CartItems.Count > 0)
 {
     <table class="table">
-        
+        <thead>
+            <tr>
+                <th></th>
+                <th>Book</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model.CartItems)
+            {
+                var bookTotal = item.Book.Price = item.Quantity;
+                <tr>
+                    <td>
+                        <img src="@item.Book.Image" style="height: 4em">
+                    </td>
+                    <td>
+                        @item.Book.Title
+                    </td>
+                    <td>
+                        @bookTotal.ToString("c");
+                    </td>
+                    <td>
+                        @item.Quantity
+                    </td>
+                    <td></td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td class="text-right">
+                <strong>Total:</strong>
+            </td>
+            <td>
+                <strong>@Model?.GetCartTotal().ToString("c")</strong>
+            </td>
+        </tfoot>
     </table>
+}
+else{
+    <h3 class="text-center"> Cart is Empty</h3>
 }
 
 
