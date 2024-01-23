@@ -7,6 +7,18 @@
         gap: 10px; 
         color: black; 
     }
+     .clear-cart-button {
+        background-color: #dc3545; 
+        color: #fff; 
+        padding: 10px 20px; 
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .clear-cart-button:hover {
+        background-color: #c82333; 
+    }
 </style>
 
 <h2>Cart</h2>
@@ -64,7 +76,11 @@
                 </td>
         </tfoot>
     </table>
-     <a class="a-cleanup" asp-controller="Cart" asp-action="ClearCart"><div class="btn btn-primary float-right mr-5"><i class="fa-solid fa-trash-can"></i> Clear Cart</div></a>
+    <a class="a-cleanup" asp-controller="Cart" asp-action="ClearCart">
+    <div class="clear-cart-button float-right mr-5">
+        <i class="fa-solid fa-trash-can"></i> Clear Cart
+    </div>
+</a>
 }
 else
 {
