@@ -33,7 +33,7 @@ namespace Books.Controllers
             {
                 _cart.AddToCart(selectedBook, 1);
             }
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "Store");
         }
 
         public IActionResult RemoveFromCart(int id)
@@ -72,7 +72,7 @@ namespace Books.Controllers
         public IActionResult ClearCart()
         {
             _cart.ClearCart();
-            
+
             return RedirectToAction("Index");
         }
 

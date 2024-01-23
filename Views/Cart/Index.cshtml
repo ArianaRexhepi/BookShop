@@ -69,9 +69,12 @@
         </tfoot>
     </table>
    
-<a class="a-cleanup" asp-controller="Cart" asp-action="ClearCart" style="display: block; width: 100%; text-align: center;">
-    <div class="btn btn-danger"><i class="fa-solid fa-trash-can"></i> Clear Cart</div>
-</a>
+<div class="d-flex justify-content-end">
+    <a class="a-cleanup" asp-controller="Cart" asp-action="ClearCart">
+        <div class="btn btn-danger"><i class="fa-solid fa-trash-can"></i> Clear Cart</div>
+    </a>
+</div>
+
 }
 else
 {
