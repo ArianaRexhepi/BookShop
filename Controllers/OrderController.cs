@@ -44,6 +44,11 @@ namespace Books.Controllers
             return View(order);
         }
 
+         public IActionResult CheckOutComplete(Order order)
+        {
+            return View(order);
+        }
+
         public void CreateOrder(Order order)
         {
             order.OrderPlaced = DateTime.Now;
