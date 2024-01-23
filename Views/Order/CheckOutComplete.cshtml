@@ -1,0 +1,65 @@
+﻿@model Books.Models.Order
+
+<style>
+    .quantity-controls{
+        display: flex;
+        align-items: center;
+        gap: 10px; 
+        color: black; 
+    }
+</style>
+
+<h1>Thank you for your order!</h1>
+
+<h5 class="mt-5">Order Id: @Model.Id</h5>
+<hr/>
+
+    <table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Book</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+       @foreach (var item in Model.OrderItems)
+{
+    var itemTotal = item.Book.Price * item.Quantity;
+
+    <tr>
+        <td>
+            <a class="a-cleanup" asp-controller="Store" asp-action="Details" asp-route-id="@item.Id">
+                <img src="@item.Book.Image" style="height: 4em">
+            </a>
+        </td>
+        <td>
+            <a class="a-cleanup" asp-controller="Store" asp-action="Details" asp-route-id="@item.Id">@item.Book.Title</a>
+        </td>
+        <td>
+            @itemTotal.ToString("C", new System.Globalization.CultureInfo("en-IE"))
+        </td>
+        <td>
+            <div class="quantity-controls">
+              @item.Quantity
+            </div>
+        </td>
+    </tr>
+}
+        </tbody>
+        <tfoot>
+                <td style="padding: 10px;"></td>
+                <td style="padding: 10px;"></td>
+                <td style="padding: 10px;"></td>
+                <td style="padding: 10px;"></td>
+                <td class="text-right" style="padding: 10px;">
+                    <strong>Total: @(Model?.OrderTotal.ToString("C", new System.Globalization.CultureInfo("en-IE")))</strong>
+                </td>
+        </tfoot>
+    </table>
+   
+
+
+
+
