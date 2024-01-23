@@ -35,7 +35,7 @@
         <td>
             <div class="quantity-controls">
                 <a asp-controller="Cart" asp-action="ReduceQuantity" asp-route-id="@item.Book.Id"><i class="fa-solid fa-minus"></i></a>
-                <span class="badge badge-primary">@item.Quantity</span>
+                <span>@item.Quantity</span>
                 <a asp-controller="Cart" asp-action="IncreaseQuantity" asp-route-id="@item.Book.Id"><i class="fa-solid fa-plus"></i></a>
             </div>
         </td>
@@ -50,7 +50,7 @@
                 <td style="padding: 10px;"></td>
                 <td style="padding: 10px;"></td>
                 <td class="text-right" style="padding: 10px;">
-                    <strong>Total: @(Model?.GetCartTotal().ToString("C"))</strong>
+                    <strong>Total: @(Model?.GetCartTotal().ToString("C", new System.Globalization.CultureInfo("en-IE")))</strong>
                 </td>
         </tfoot>
     </table>
