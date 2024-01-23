@@ -1,6 +1,6 @@
 ﻿@model Books.Models.Cart
 
-<h1>Cart</h1>
+<h2><i class="fa-solid fa-cart-shopping"></i>Cart</h2>
 
 @if (Model.CartItems.Count > 0)
 {
@@ -36,19 +36,13 @@
             }
         </tbody>
         <tfoot>
-
-            <tr>
-
-                <td></td>
-                <td></td>
-
-                <td></td>
-                <td class="text-right">
-                    <strong>Total:</strong>
-                
-                <td>
-                    <strong>@(Model?.GetCartTotal().ToString("C"))</strong>
-                </td>
+            <tr style="background-color: #f2f2f2; color: #333; font-weight: bold;">
+                <td style="padding: 10px;"></td>
+                <td style="padding: 10px;"></td>
+                <td style="padding: 10px;"></td>
+                <td style="padding: 10px;"></td>
+                <td class="text-right" style="padding: 10px;">
+                    <strong>Total: @(Model?.GetCartTotal().ToString("C"))</strong>
                 </td>
             </tr>
 
