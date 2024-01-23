@@ -1,5 +1,14 @@
 ﻿@model Books.Models.Cart
 
+<style>
+    .quantity-controls{
+        display: flex;
+        align-items: center;
+        gap: 10px; 
+        color: black; 
+    }
+</style>
+
 <h2>Cart</h2>
 <hr/>
 
@@ -38,6 +47,7 @@
                 <span>@item.Quantity</span>
                 <a asp-controller="Cart" asp-action="IncreaseQuantity" asp-route-id="@item.Book.Id"><i class="fa-solid fa-plus"></i></a>
             </div>
+
         </td>
         <td></td>
     </tr>
@@ -54,7 +64,7 @@
                 </td>
         </tfoot>
     </table>
-     <a class="a-cleanup" asp-controller="Cart" asp-action="CleanCart"><div class="btn btn-primary float-right mr-5"><i class="fa-solid fa-trash-can"></i> Cart is Empty</div></a>
+     <a class="a-cleanup" asp-controller="Cart" asp-action="ClearCart"><div class="btn btn-primary float-right mr-5"><i class="fa-solid fa-trash-can"></i> Clear Cart</div></a>
 }
 else
 {

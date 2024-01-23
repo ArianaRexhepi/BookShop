@@ -108,13 +108,13 @@ namespace Books.Models
 
         public void ClearCart()
         {
-            var cartItem = _context.CartItems.Where(ci => ci.CartId == Id);
-            
-            _context.CartItems.RemoveRange(CartItems);
-        
-            _context.SaveChanges();
+            var cartItems = _context.CartItems.Where(ci => ci.CartId == Id);
 
+            _context.CartItems.RemoveRange(cartItems);
+
+            _context.SaveChanges();
         }
+
 
         public List<CartItem> GetAllCartItems()
         {
