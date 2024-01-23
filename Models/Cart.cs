@@ -97,6 +97,29 @@ namespace Books.Models
 
              return remainingQuantity;
         }
+
+        public void RemoveFromCart(Book book)
+        {
+            var cartItem = GetCartItem(book);
+
+             if(cartItem != null)
+             {
+                _context.CartItems.Remove(cartItem);
+             }
+             _context.SaveChanges();
+
+        }
+
+        public void ClearCart()
+        {
+            var cartItem = _context.CartItems.Where(ci => ci.CartId == Id);
+            
+            _context.CartItems.RemoveRange(CartItems);
+        
+            _context.SaveChanges();
+
+        }
+
         public List<CartItem> GetAllCartItems()
         {
             return CartItems ??
