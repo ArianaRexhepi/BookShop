@@ -84,13 +84,9 @@ namespace Books.Models
 
              if(cartItem != null)
              {
-                if(cartItem.Quantity>1)
+                if(cartItem.Quantity>0)
                 {
                     remainingQuantity = ++cartItem.Quantity;
-                }
-                else
-                {
-                    _context.CartItems.Remove(cartItem);
                 }
              }
              _context.SaveChanges();

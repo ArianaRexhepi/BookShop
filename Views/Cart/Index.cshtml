@@ -20,16 +20,18 @@
                 var bookTotal = item.Book.Price = item.Quantity;
                 <tr>
                     <td>
-                        <img src="@item.Book.Image" style="height: 4em">
+                        <a class="a-cleanup" asp-controller="Store" asp-action="Details" asp-route-id="@item.Id"><img src="@item.Book.Image" style="height: 4em"></a>
                     </td>
                     <td>
-                        @item.Book.Title
+                        <a class="a-cleanup" asp-controller="Store" asp-action="Details" asp-route-id="@item.Id">@item.Book.Title</a> 
                     </td>
                     <td>
                         @(bookTotal.ToString("C"))
                     </td>
                     <td>
-                        @item.Quantity
+                       <a asp-controller="Cart" asp-action="ReduceQuantity" asp-route-id="@item.Book.Id"><i class="fa-solid fa-minus"></i></a>
+                       <span class="badge badge-primary">@item.Quantity</span>
+                        <a asp-controller="Cart" asp-action="IncreaseQuantity" asp-route-id="@item.Book.Id"><i class="fa-solid fa-plus"></i></a>
                     </td>
                     <td></td>
                 </tr>
@@ -45,9 +47,9 @@
                     <strong>Total: @(Model?.GetCartTotal().ToString("C"))</strong>
                 </td>
             </tr>
-
         </tfoot>
     </table>
+     <a class="a-cleanup" asp-controller="Cart" asp-action="CleanCart"><div class="btn btn-primary float-right mr-5"><i class="fa-solid fa-trash-can"></i> Cart is Empty</div></a>
 }
 else
 {
