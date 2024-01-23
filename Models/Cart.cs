@@ -38,7 +38,7 @@ namespace Books.Models
         {
             var cartItem = GetCartItem(book);
 
-            if(cartItem = null)
+            if(cartItem == null)
             {
                 cartItem = new CartItem
                 {

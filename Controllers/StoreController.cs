@@ -17,7 +17,7 @@ namespace Books.Controllers
         }
          public async Task<IActionResult> Index()
         {
-            return View(await _context.Book.ToListAsync());
+            return View(await _context.Books.ToListAsync());
         }
 
         public async Task<IActionResult> Details(int? id)
@@ -27,7 +27,7 @@ namespace Books.Controllers
                 return NotFound();
             }
 
-            var book = await _context.Book
+            var book = await _context.Books
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (book == null)
             {

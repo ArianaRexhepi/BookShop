@@ -124,7 +124,7 @@ namespace Books.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Book");
+                    b.ToTable("Books");
                 });
 
             modelBuilder.Entity("Books.Models.CartItem", b =>
