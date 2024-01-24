@@ -39,7 +39,7 @@ namespace Books.Controllers
             {
                 CreateOrder(order);
                 _cart.ClearCart();
-                return View("Checkout Complete", order);
+                return View("CheckOutComplete", order);
             }
             return View(order);
         }
