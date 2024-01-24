@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Books.Models;
 using BOOKS.Areas.Identity.Data;
 
-public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+public class ApplicationDbContext : IdentityDbContext<DefaultUser>
     {
         public ApplicationDbContext (DbContextOptions<ApplicationDbContext> options)
             : base(options)
