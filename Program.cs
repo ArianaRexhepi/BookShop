@@ -14,9 +14,10 @@ var connectionString = builder.Configuration.GetConnectionString("MySqlConnectio
 builder.Services.AddDbContext<ApplicationDbContext>(options => 
 options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
-builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
-    .AddRoles<IdentityRole>()
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddDefaultIdentity<DefaultUser>().AddEntityFrameworkStores<ApplicationDbContext>();
+// (options => options.SignIn.RequireConfirmedAccount = false)
+//     .AddRoles<IdentityRole>()
+    
 
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
@@ -24,6 +25,7 @@ builder.Services.AddScoped<Cart>(sp => Cart.GetCart(sp));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
 
 builder.Services.AddDistributedMemoryCache();
 
@@ -49,20 +51,22 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseAuthorization();
 
 app.UseSession();
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
+    
+app.MapRazorPages();
 
 var scope = app.Services.CreateScope();
 var services = scope.ServiceProvider;
 
-var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
-var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
-await Seed.SeedAdminAsync(userManager, roleManager);
+// var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
+// var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+// await Seed.SeedAdminAsync(userManager, roleManager);
 
 app.Run();
 
