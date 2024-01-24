@@ -2,11 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Books.Controllers
 {
+    [AllowAnonymous]
     public class StoreController : Controller
     {
        private readonly ApplicationDbContext _context;
@@ -15,6 +17,8 @@ namespace Books.Controllers
         {
             _context = context;
         }
+
+        [Authorize]
          public async Task<IActionResult> Index()
         {
             return View(await _context.Books.ToListAsync());

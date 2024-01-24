@@ -16,6 +16,34 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/els/Desktop/books/Books/Books
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/els/Desktop/books/Books/Books/Areas/Identity/Data/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvRGF0YS9QYWdlcy9BY2NvdW50L0xvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/els/Desktop/books/Books/Books/Areas/Identity/Data/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvRGF0YS9QYWdlcy9BY2NvdW50L0xvZ291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/els/Desktop/books/Books/Books/Areas/Identity/Data/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvRGF0YS9QYWdlcy9BY2NvdW50L1JlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/els/Desktop/books/Books/Books/Areas/Identity/Data/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvRGF0YS9QYWdlcy9BY2NvdW50L19WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/els/Desktop/books/Books/Books/Areas/Identity/Data/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvRGF0YS9QYWdlcy9fVmFsaWRhdGlvblNjcmlwdHNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/els/Desktop/books/Books/Books/Areas/Identity/Data/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvRGF0YS9QYWdlcy9fVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/els/Desktop/books/Books/Books/Areas/Identity/Data/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvRGF0YS9QYWdlcy9fVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/els/Desktop/books/Books/Books/Views/Book/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9vay9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
