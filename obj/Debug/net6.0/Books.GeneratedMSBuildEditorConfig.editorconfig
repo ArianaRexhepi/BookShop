@@ -44,6 +44,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvRGF0YS9QYWdlcy9fVmlld1N0YXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/els/Desktop/books/Books/Books/Views/Admin/CreateRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQ3JlYXRlUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/els/Desktop/books/Books/Books/Views/Admin/EditUsersInRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vRWRpdFVzZXJzSW5Sb2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/els/Desktop/books/Books/Books/Views/Admin/Roles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vUm9sZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/els/Desktop/books/Books/Books/Views/Book/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9vay9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
