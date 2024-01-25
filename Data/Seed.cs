@@ -19,8 +19,8 @@ namespace Books.Data
 
                 var defaultUser = new ApplicationUser
                 {
-                    UserName = "Admin123",
-                    Email = "admin@gmail.com",
+                    UserName = "Arianaa",
+                    Email = "arianaarexhepi@gmail.com",
                     EmailConfirmed = true
                 };
                 if (userManager.Users.All(u => u.Id != defaultUser.Id))
