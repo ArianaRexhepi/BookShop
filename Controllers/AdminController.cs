@@ -1,4 +1,3 @@
-using BOOKS.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -8,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BOOKS.Areas.Identity.Data;
+using Books.Models;
 
 namespace BOOKS.Controllers
 {
