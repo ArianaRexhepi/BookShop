@@ -10,35 +10,38 @@
             <h1 class="mb-0">Book Details</h1>
         </div>
         <div class="card-body">
-            <dl class="row">
-                <dt class="col-sm-3 text-right">Title:</dt>
-                <dd class="col-sm-9">@Html.DisplayFor(model => model.Title)</dd>
+            <div class="row">
+                <div class="col-sm-9">
+                    <dl class="row">
+                        <dt class="col-sm-3 text-right">Title:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.Title)</dd>
 
-                <dt class="col-sm-3 text-right">Author:</dt>
-                <dd class="col-sm-9">@Html.DisplayFor(model => model.Author)</dd>
+                        <dt class="col-sm-3 text-right">Author:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.Author)</dd>
 
-                <dt class="col-sm-3 text-right">Description:</dt>
-                <dd class="col-sm-9">@Html.DisplayFor(model => model.Description)</dd>
+                        <dt class="col-sm-3 text-right">Description:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.Description)</dd>
 
-                <dt class="col-sm-3 text-right">ISBN:</dt>
-                <dd class="col-sm-9">@Html.DisplayFor(model => model.ISBN)</dd>
+                        <dt class="col-sm-3 text-right">ISBN:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.ISBN)</dd>
 
-                <dt class="col-sm-3 text-right">Date Published:</dt>
-                <dd class="col-sm-9">@Html.DisplayFor(model => model.DatePublished)</dd>
+                        <dt class="col-sm-3 text-right">Date Published:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.DatePublished)</dd>
 
-                <dt class="col-sm-3 text-right">Price:</dt>
-                <dd class="col-sm-9">
-                    @if (Model?.Price != null)
-                    {
-                        <span>@string.Format("€{0:N2}", Model.Price)</span>
-                    }
-                    else
-                    {
-                        <span>No price available</span>
-                    }
-                </dd>
-                <dt class="col-sm-3 text-right">Image:</dt>
-                <dd class="col-sm-9">
+                        <dt class="col-sm-3 text-right">Price:</dt>
+                        <dd class="col-sm-9">
+                            @if (Model?.Price != null)
+                            {
+                                <span>@string.Format("€{0:N2}", Model.Price)</span>
+                            }
+                            else
+                            {
+                                <span>No price available</span>
+                            }
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-sm-3">
                     @if (!string.IsNullOrEmpty(Model?.Image))
                     {
                         <img src="@Model.Image" alt="Book Image" class="img-fluid" />
@@ -47,8 +50,8 @@
                     {
                         <span>No image available</span>
                     }
-                </dd>
-            </dl>
+                </div>
+            </div>
         </div>
         <div class="card-footer text-right">
             <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning">Edit</a>

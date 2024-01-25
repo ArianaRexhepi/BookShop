@@ -1,60 +1,76 @@
 @model Books.Models.BestSeller
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Delete";
 }
 
-<h3 class="text-center mt-4 mb-4">Edit BestSeller</h3>
-
-<div class="row justify-content-center">
-    <div class="col-md-6">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="Title" class="control-label"></label>
-                <input asp-for="Title" class="form-control" />
-                <span asp-validation-for="Title" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Author" class="control-label"></label>
-                <input asp-for="Author" class="form-control" />
-                <span asp-validation-for="Author" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
-                <textarea asp-for="Description" class="form-control"></textarea>
-                <span asp-validation-for="Description" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ISBN" class="control-label"></label>
-                <input asp-for="ISBN" class="form-control" />
-                <span asp-validation-for="ISBN" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DatePublished" class="control-label"></label>
-                <input asp-for="DatePublished" class="form-control" />
-                <span asp-validation-for="DatePublished" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
-                <input asp-for="Price" class="form-control" />
-                <span asp-validation-for="Price" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Image" class="control-label"></label>
-                <input asp-for="Image" class="form-control" />
-                <span asp-validation-for="Image" class="text-danger"></span>
-            </div>
-            <div class="form-group mt-3">
-                <input type="submit" value="Edit" class="btn btn-warning" />
-                <a asp-action="Index" class="btn btn-danger">Dismiss</a>
-            </div>
-        </form>
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <hr />
+    <div class="row">
+        <div class="col-sm-6">
+            <dl class="row">
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Title)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Title)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Author)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Author)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Description)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Description)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.ISBN)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.ISBN)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.DatePublished)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.DatePublished)
+                </dd>
+                <dt class="col-sm-4 text-right">Price:</dt>
+                <dd class="col-sm-8">
+                    @if (Model?.Price != null)
+                    {
+                        <span>@string.Format("€{0:N2}", Model.Price)</span>
+                    }
+                    else
+                    {
+                        <span>No price available</span>
+                    }
+                </dd>
+            </dl>
+        </div>
+        <div class="col-sm-6">
+            <dt class="col-sm-12 text-right">Image:</dt>
+            <dd class="col-sm-12">
+                @if (!string.IsNullOrEmpty(Model?.Image))
+                {
+                    <img src="@Model.Image" alt="Book Image" class="img-fluid" />
+                }
+                else
+                {
+                    <span>No image available</span>
+                }
+            </dd>
+        </div>
     </div>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <a asp-action="Index" class="btn btn-primary">Go Back</a>
+        <input type="submit" value="Delete" class="btn btn-danger" />
+    </form>
 </div>
-
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
