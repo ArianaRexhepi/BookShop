@@ -88,7 +88,7 @@ namespace Books.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("Books.Models.BestSeller", b =>
+            modelBuilder.Entity("Books.Models.Bestseller", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -124,7 +124,7 @@ namespace Books.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("BestSellers");
+                    b.ToTable("Bestseller");
                 });
 
             modelBuilder.Entity("Books.Models.Book", b =>
