@@ -26,8 +26,8 @@
                         </li>
                         
                        
-                        @if(User.IsInRole("Admin"))
-                        {
+                        @* @if(User.IsInRole("Admin"))
+                        { *@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Audiobooks" asp-action="Index">Audiobooks List</a>
                         </li>
@@ -43,7 +43,7 @@
                          <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Roles">Roles</a>
                         </li>
-                        }
+                        @* } *@
                     </ul>
                     <partial name="_LoginPartial"/>
                     <a class="nav-link text-dark float-right" asp-area="" asp-controller="Cart" asp-action="Index"><i class="fa-solid fa-cart-shopping"></i></a>
