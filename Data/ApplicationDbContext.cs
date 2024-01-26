@@ -19,6 +19,8 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<Bestseller> Bestseller { get; set; }
+        public DbSet<Books.Models.Magazines> Magazines { get; set; }
+        public DbSet<Books.Models.Audiobooks> Audiobooks { get; set; }
        
         
 
