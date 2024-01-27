@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Books.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240127124041_inital")]
-    partial class inital
+    [Migration("20240126151939_Bestseller")]
+    partial class Bestseller
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -88,45 +88,6 @@ namespace Books.Migrations
                         .HasDatabaseName("UserNameIndex");
 
                     b.ToTable("AspNetUsers", (string)null);
-                });
-
-            modelBuilder.Entity("Books.Models.Audiobooks", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<string>("Author")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<DateTime>("DatePublished")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(10000)
-                        .HasColumnType("varchar(10000)");
-
-                    b.Property<string>("ISBN")
-                        .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType("varchar(15)");
-
-                    b.Property<string>("Image")
-                        .HasColumnType("longtext");
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(65,30)");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar(100)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Audiobooks");
                 });
 
             modelBuilder.Entity("Books.Models.Bestseller", b =>
@@ -228,45 +189,6 @@ namespace Books.Migrations
                     b.HasIndex("BookId");
 
                     b.ToTable("CartItems");
-                });
-
-            modelBuilder.Entity("Books.Models.Magazines", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<string>("Author")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<DateTime>("DatePublished")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(10000)
-                        .HasColumnType("varchar(10000)");
-
-                    b.Property<string>("ISBN")
-                        .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType("varchar(15)");
-
-                    b.Property<string>("Image")
-                        .HasColumnType("longtext");
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(65,30)");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar(100)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Magazines");
                 });
 
             modelBuilder.Entity("Books.Models.Order", b =>
