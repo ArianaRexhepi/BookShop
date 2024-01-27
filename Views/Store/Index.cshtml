@@ -71,7 +71,6 @@
     }
 
     .btn {
-        margin-top: 20px;
         text-align: center;
         text-decoration: none;
         font-size: 16px;
@@ -146,8 +145,10 @@
                     <label for="searchString" class="sr-only">Title or Author</label>
                     <input type="text" name="searchString" placeholder="Title or Author" class="form-control form-control-long" />
                 </div>
+                 <div class="d-flex gap-2 ms-2">
                 <button type="submit" class="btn btn-primary btn-sm mr-2">Filter</button>
                 <a asp-action="Index" class="btn btn-secondary btn-sm ml-auto">Clear</a>
+                </div>
             </div>
         </form>
     </div>

@@ -3,11 +3,9 @@
     {
         var routeData = ViewContext?.RouteData?.Values;
 
-        // Check for null values to avoid NullReferenceException
         var currentController = routeData?["Controller"]?.ToString();
         var currentAction = routeData?["Action"]?.ToString();
 
-        // Check if the current controller and action match the provided values
         return string.Equals(currentController, controller, StringComparison.OrdinalIgnoreCase) &&
         string.Equals(currentAction, action, StringComparison.OrdinalIgnoreCase);
     }
@@ -16,11 +14,9 @@
     {
         var routeData = ViewContext?.RouteData?.Values;
 
-        // Check for null values to avoid NullReferenceException
         var currentController = routeData?["Controller"]?.ToString();
         var currentAction = routeData?["Action"]?.ToString();
 
-        // Check if the current controller and action match the provided values
         return string.Equals(currentController, controller, StringComparison.OrdinalIgnoreCase) &&
         string.Equals(currentAction, action, StringComparison.OrdinalIgnoreCase);
     }
@@ -53,19 +49,19 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark @(IsActiveLink("Store", "Index"))" asp-area=""
+                            <a class="nav-link text-dark @(IsActiveLink("Store", "Index")? "active" : "")" asp-area=""
                                 asp-controller="Store" asp-action="Index">Books</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark @(IsActiveLink("BStore", "Bestseller"))" asp-area=""
+                            <a class="nav-link text-dark @(IsActiveLink("BStore", "Bestseller")? "active" : "")" asp-area=""
                                 asp-controller="BStore" asp-action="Index">Bestseller</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark @(IsActiveLink("MagStore", "Magazines"))" asp-area=""
+                            <a class="nav-link text-dark @(IsActiveLink("MagStore", "Magazines")? "active" : "")" asp-area=""
                                 asp-controller="MagStore" asp-action="Index">Magazines</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark @(IsActiveLink("AudStore", "Audiobooks"))" asp-area=""
+                            <a class="nav-link text-dark @(IsActiveLink("AudStore", "Audiobooks")? "active" : "")" asp-area=""
                                 asp-controller="AudStore" asp-action="Index">Audiobooks</a>
                         </li>
 
@@ -102,12 +98,15 @@
 
                         }
                     </ul>
+                    <div class="d-flex align-items-center">
                     <partial name="_LoginPartial" />
+                    
                     @if (User.Identity.IsAuthenticated)
                     {
                         <a class="nav-link text-dark float-right" asp-area="" asp-controller="Cart" asp-action="Index"><i
                                 class="fa-solid fa-cart-shopping"></i></a>
                     }
+                    </div>
                 </div>
             </div>
         </nav>

@@ -13,16 +13,7 @@
         {
             return "fa-solid fa-x";
         }
-    }
-    // Get the value of a specific query parameter
-    @* string paramValue = Context.Request.QueryString["iframe"] == "1" ? "iframe" : string.Empty; *@
-
-    // Check if a query parameter exists
-    @* bool paramExists = Context.Request.Query.ContainsKey("sort");
-
-    string selectSort = paramExists ? paramValue : "all";
-    Console.WriteLine("paramValue", paramValue);
-    Console.WriteLine("selectSort", selectSort); *@
+    }  
 
 }
 
@@ -35,41 +26,39 @@
 </div>
 
 <div class="sorting-filter">
-    <form id="filterForm" asp-action="Index" asp-controller="Book" method="get" class="d-flex align-items-center">
-        <input type="hidden" id="sortOption" name="sort" value="" />
+    <form id="filterForm" asp-action="Index" asp-controller="Book" method="get"
+        class="d-flex flex-column justify-content-center align-items-start gap-3">
+        <div>
+            <input type="hidden" id="sortOption" name="sort" value="" />
 
-        <label for="sort" class="mr-2">Sort by Published Date:</label>
-        <select id="sort"  class="custom-select mr-3" onchange="handleSortChange()">
-            <option value="all">All</option>
-            <option value="newest">Newest First</option>
-            <option value="oldest">Oldest First</option>
-        </select>
-
-        <div class="form-check form-check-inline mr-3">
-            <input type="checkbox" id="under50" name="under50" class="form-check-input">
-            <label class="form-check-label" for="under50">Under €50</label>
+            <label for="sort" class="mr-2">Sort by Published Date:</label>
+            <select id="sort" class="custom-select mr-3" onchange="handleSortChange()">
+                <option value="all">All</option>
+                <option value="newest">Newest First</option>
+                <option value="oldest">Oldest First</option>
+            </select>
         </div>
+        <div>
+            <div class="form-check form-check-inline mr-3">
+                <input type="checkbox" id="under50" name="under50" class="form-check-input">
+                <label class="form-check-label" for="under50">Under €50</label>
+            </div>
 
-        <div class="form-check form-check-inline mr-3">
-            <input type="checkbox" id="50to100" name="50to100" class="form-check-input">
-            <label class="form-check-label" for="50to100">€50 - $100</label>
+            <div class="form-check form-check-inline mr-3">
+                <input type="checkbox" id="50to100" name="50to100" class="form-check-input">
+                <label class="form-check-label" for="50to100">€50 - $100</label>
+            </div>
+
+            <div class="form-check form-check-inline mr-3">
+                <input type="checkbox" id="over100" name="over100" class="form-check-input">
+                <label class="form-check-label" for="over100">Over €100</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-sm">Apply Filters</button>
+            <button type="button" class="btn btn-secondary btn-sm ml-2" onclick="clearFilters()">Clear Filters</button>
         </div>
-
-        <div class="form-check form-check-inline mr-3">
-            <input type="checkbox" id="over100" name="over100" class="form-check-input">
-            <label class="form-check-label" for="over100">Over €100</label>
-        </div>
-
-        <button type="submit" class="btn btn-primary btn-sm">Apply Filters</button>
-
-        <!-- Clear Filters button -->
-        <button type="button" class="btn btn-secondary btn-sm ml-2" onclick="clearFilters()">Clear Filters</button>
     </form>
 </div>
-
-
-
-
 
 
 <table class="table table-striped table-bordered table-hover">

@@ -70,7 +70,6 @@
     }
 
     .btn {
-        margin-top: 20px;
         text-align: center;
         text-decoration: none;
         font-size: 16px;
@@ -135,7 +134,7 @@
 
 <h2 class="my-4 text-center">Audiobooks Collection</h2>
 
-<<div class="container">
+<div class="container">
     <div class="row justify-content-center">
         <form asp-action="Index" class="col-md-6 my-1 p-2 text-center">
             <div class="d-flex align-items-center mb-2">
@@ -150,44 +149,18 @@
         </form>
     </div>
 </div>
-<div class="form-check form-check-inline mr-3">
-    <input type="checkbox" id="under50" name="under50" class="form-check-input">
-    <label class="form-check-label" for="under50">Under €50</label>
-</div>
 
-<div class="form-check form-check-inline mr-3">
-    <input type="checkbox" id="50to100" name="50to100" class="form-check-input">
-    <label class="form-check-label" for="50to100">€50 - $100</label>
-</div>
-
-<div class="form-check form-check-inline mr-3">
-    <input type="checkbox" id="over100" name="over100" class="form-check-input">
-    <label class="form-check-label" for="over100">Over €100</label>
-</div>
-
-<button type="submit" class="btn btn-primary btn-sm">Apply Filters</button>
-
-<!-- Clear Filters button -->
-<button type="button" class="btn btn-secondary btn-sm ml-2" onclick="clearFilters()">Clear Filters</button>
 
 <div class="card-container">
     @foreach (var book in Model)
     {
         <div class="card">
-            <a class="a-cleanup" asp-controller="MagStore" asp-action="Details" asp-route-id="@book.Id">
+            <a class="a-cleanup" asp-controller="AudStore" asp-action="Details" asp-route-id="@book.Id">
                 <img src="@book.Image" alt="Book Image">
                 <div class="card-body">
                     <h5 class="card-title">@book.Title</h5>
                     <p class="card-test">By @book.Author</p>
                     <p class="card-text">Price: @string.Format("€{0:N2}", book.Price)</p>
-                    @if (User.Identity.IsAuthenticated)
-                    {
-                        <div class="card-actions">
-                            <a asp-controller="Cart" asp-action="AddToCart" asp-route-id="@book.Id" class="btn btn-primary">
-                                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
-                            </a>
-                        </div>
-                    }
                 </div>
             </a>
         </div>
@@ -218,12 +191,3 @@
     </ul>
 </div>
 
-<script>
-    function clearFilters() {
-        document.getElementById("under50").checked = false;
-        document.getElementById("50to100").checked = false;
-        document.getElementById("over100").checked = false;
-        document.getElementById("sort").value = "all";
-        document.getElementById("filterForm").submit();
-    }
-</script>

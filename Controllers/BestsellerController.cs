@@ -20,10 +20,57 @@ namespace Books.Controllers
         }
 
         // GET: Bestseller
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString, string minPrice, string maxPrice, string sort)
         {
-            return View(await _context.Bestseller.ToListAsync());
+            var bestseller = _context.Bestseller.Select(b => b);
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                bestseller = bestseller.Where(b => b.Title.Contains(searchString) || b.Author.Contains(searchString));
+            }
+            // if (!string.IsNullOrEmpty(minPrice))
+            // {
+            //     var min = int.Parse(minPrice);
+            //     books = books.Where(b => b.Price >= min);
+            // }
+            // if (!string.IsNullOrEmpty(maxPrice))
+            // {
+            //     var max = int.Parse(maxPrice);
+            //     books = books.Where(b => b.Price <= max);
+            // }
+            if (Request.Query.ContainsKey("under50"))
+            {
+                bestseller = bestseller.Where(b => b.Price < 50);
+            }
+
+            if (Request.Query.ContainsKey("50to100"))
+            {
+                bestseller = bestseller.Where(b => b.Price >= 50 && b.Price <= 100);
+            }
+
+            if (Request.Query.ContainsKey("over100"))
+            {
+                bestseller = bestseller.Where(b => b.Price > 100);
+            }
+            switch (sort)
+            {
+                case "oldest":
+                    bestseller = bestseller.OrderBy(item => item.DatePublished);
+                    break;
+
+                case "newest":
+                    bestseller = bestseller.OrderByDescending(item => item.DatePublished);
+                    break;
+
+                // Default case (when "All" is selected)
+                default:
+                    bestseller = bestseller.OrderByDescending(item => item.DatePublished);
+                    break;
+            }
+
+            return View(await bestseller.AsNoTracking().ToListAsync());
         }
+
 
         // GET: Bestseller/Details/5
         public async Task<IActionResult> Details(int? id)

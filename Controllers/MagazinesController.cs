@@ -20,10 +20,57 @@ namespace Books.Controllers
         }
 
         // GET: Magazines
-        public async Task<IActionResult> Index()
+       public async Task<IActionResult> Index(string searchString, string minPrice, string maxPrice, string sort)
         {
-            return View(await _context.Magazines.ToListAsync());
+            var magazines = _context.Magazines.Select(b => b);
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                magazines = magazines.Where(b => b.Title.Contains(searchString) || b.Author.Contains(searchString));
+            }
+            // if (!string.IsNullOrEmpty(minPrice))
+            // {
+            //     var min = int.Parse(minPrice);
+            //     books = books.Where(b => b.Price >= min);
+            // }
+            // if (!string.IsNullOrEmpty(maxPrice))
+            // {
+            //     var max = int.Parse(maxPrice);
+            //     books = books.Where(b => b.Price <= max);
+            // }
+            if (Request.Query.ContainsKey("under50"))
+            {
+                magazines = magazines.Where(b => b.Price < 50);
+            }
+
+            if (Request.Query.ContainsKey("50to100"))
+            {
+                magazines = magazines.Where(b => b.Price >= 50 && b.Price <= 100);
+            }
+
+            if (Request.Query.ContainsKey("over100"))
+            {
+                magazines = magazines.Where(b => b.Price > 100);
+            }
+            switch (sort)
+            {
+                case "oldest":
+                    magazines = magazines.OrderBy(item => item.DatePublished);
+                    break;
+
+                case "newest":
+                    magazines = magazines.OrderByDescending(item => item.DatePublished);
+                    break;
+
+                // Default case (when "All" is selected)
+                default:
+                    magazines = magazines.OrderByDescending(item => item.DatePublished);
+                    break;
+            }
+
+            return View(await magazines.AsNoTracking().ToListAsync());
         }
+
 
         // GET: Magazines/Details/5
         public async Task<IActionResult> Details(int? id)
