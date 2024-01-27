@@ -1,8 +1,10 @@
+using System.Text;
 using Books.Data;
 using Books.Models;
 using BOOKS.Areas.Identity.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +19,8 @@ options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
 .AddRoles<IdentityRole>()
 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
@@ -63,9 +67,19 @@ app.MapRazorPages();
 var scope = app.Services.CreateScope();
 var services = scope.ServiceProvider;
 
-var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
-var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
-await Seed.SeedAdminAsync(userManager, roleManager);
+try
+{
+    var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
+    var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+
+    await Seed.SeedAdminAsync(userManager, roleManager);
+
+    Console.WriteLine("-------->Data seeded successfully.");
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+};
 
 app.Run();
 

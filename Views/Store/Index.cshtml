@@ -138,7 +138,20 @@
 <h2 class="my-4 text-center">Book Collection</h2>
 <h6 class="my-4 text-center">We believe that books have the power to inspire, educate, and entertain.</h6>
 
-
+<div class="container">
+    <div class="row justify-content-center">
+        <form asp-action="Index" class="col-md-6 my-1 p-2 text-center">
+            <div class="d-flex align-items-center mb-2">
+                <div class="form-group flex-grow-1 mr-2">
+                    <label for="searchString" class="sr-only">Title or Author</label>
+                    <input type="text" name="searchString" placeholder="Title or Author" class="form-control form-control-long" />
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm mr-2">Filter</button>
+                <a asp-action="Index" class="btn btn-secondary btn-sm ml-auto">Clear</a>
+            </div>
+        </form>
+    </div>
+</div>
 
 <div class="card-container">
     @foreach (var book in Model)

@@ -25,22 +25,22 @@ namespace Books.Controllers
         {
             var books = _context.Books.Select(b => b);
 
-            // if (!string.IsNullOrEmpty(searchString))
-            // {
-            //     books = books.Where(b => b.Title.Contains(searchString) || b.Author.Contains(searchString));
-            // }
-            // if (!string.IsNullOrEmpty(minPrice))
-            // {
-            //     var min = int.Parse(minPrice);
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                books = books.Where(b => b.Title.Contains(searchString) || b.Author.Contains(searchString));
+            }
+            if (!string.IsNullOrEmpty(minPrice))
+            {
+                var min = int.Parse(minPrice);
 
-            //     books = books.Where(b => b.Price >= min);
-            // }
-            // if (!string.IsNullOrEmpty(maxPrice))
-            // {
-            //     var max = int.Parse(maxPrice);
+                books = books.Where(b => b.Price >= min);
+            }
+            if (!string.IsNullOrEmpty(maxPrice))
+            {
+                var max = int.Parse(maxPrice);
 
-            //     books = books.Where(b => b.Price <= max);
-            // }
+                books = books.Where(b => b.Price <= max);
+            }
 
             int pageSize = 4;
             return View(await PaginatedList<Book>.CreateAsync(books.AsNoTracking(), pageNumber ?? 1, pageSize));

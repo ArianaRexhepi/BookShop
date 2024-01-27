@@ -23,30 +23,43 @@ namespace Books.Controllers
 
         // GET: Books
         [Authorize]
-         public async Task<IActionResult> Index(string searchString, string minPrice, string maxPrice)
-        {
-            var books = _context.Books.Select(b => b);
+        public async Task<IActionResult> Index(string searchString, string minPrice, string maxPrice, string sort)
+{
+    var books = _context.Books.Select(b => b);
 
-            if(!string.IsNullOrEmpty(searchString))
-            {
-                books = books.Where(b => b.Title.Contains(searchString) || b.Author.Contains(searchString));
-            }
-            if(!string.IsNullOrEmpty(minPrice))
-            {
-                var min = int.Parse(minPrice);
-                
-                books = books.Where(b => b.Price >= min);
-            }
-             if(!string.IsNullOrEmpty(maxPrice))
-            {
-                var max = int.Parse(maxPrice);
-                
-                books = books.Where(b => b.Price <= max);
-            }
-            
+    if (!string.IsNullOrEmpty(searchString))
+    {
+        books = books.Where(b => b.Title.Contains(searchString) || b.Author.Contains(searchString));
+    }
+    if (!string.IsNullOrEmpty(minPrice))
+    {
+        var min = int.Parse(minPrice);
+        books = books.Where(b => b.Price >= min);
+    }
+    if (!string.IsNullOrEmpty(maxPrice))
+    {
+        var max = int.Parse(maxPrice);
+        books = books.Where(b => b.Price <= max);
+    }
+     switch (sort)
+    {
+        case "oldest":
+            books = books.OrderBy(item => item.DatePublished);
+            break;
 
-            return View(await books.OrderByDescending(a => a.DatePublished).ToListAsync());
-        }
+        case "newest":
+            books = books.OrderByDescending(item => item.DatePublished);
+            break;
+
+        // Default case (when "All" is selected)
+        default:
+            books = books.OrderByDescending(item => item.DatePublished);
+            break;
+    }
+
+    return View(await books.AsNoTracking().ToListAsync());
+}
+
 
         // GET: Book/Details/5
         public async Task<IActionResult> Details(int? id)

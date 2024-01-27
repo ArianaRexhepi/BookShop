@@ -31,9 +31,11 @@
                                 <span>No price available</span>
                                     }
                         </h6>
+                         @if (User.Identity.IsAuthenticated){
                         <a asp-controller="Cart" asp-action="AddToCart" asp-route-id="@Model.Id" class="btn btn-outline-primary store-btn">
                             <i class="fa-solid fa-cart-shopping"></i> Add to Cart
                         </a>
+                        }
                     </div>
                     <div class="row mt-5">
                         <div class="col-md-6">

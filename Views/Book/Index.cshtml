@@ -5,7 +5,7 @@
 
     string hasImage(Book book)
     {
-        if(book.Image != "" && book.Image != null)
+        if (book.Image != "" && book.Image != null)
         {
             return "fa-solid fa-check";
         }
@@ -23,20 +23,20 @@
     </p>
 </div>
 
-<div class="container">
-    <div class="row justify-content-end">
-        <form asp-action="Index" class="col-md-4 my-1 p-2">
-            <div class="form-group mb-0">
-                <label for="searchString" class="sr-only">Title or Author</label>
-                <input type="text" name="searchString" placeholder="Title or Author" class="form-control" />
-            </div>
-            <div class="d-flex justify-content-end mt-2">
-                <input type="submit" value="Filter" class="btn btn-primary btn-sm mr-2" />
-                <a asp-action="Index" class="btn btn-secondary btn-sm">Clear</a>
-            </div>
-        </form>
-    </div>
+<div class="sorting-filter">
+    <form id="filterForm" asp-action="Index" asp-controller="Book" method="get">
+        <input type="hidden" id="sortOption" name="sort" value="" />
+        <label for="sort" class="mr-2">Sort by Published Date:</label>
+        <select id="sort" class="custom-select" onchange="handleSortChange()">
+            <option value="all">All</option>
+            <option value="newest">Newest First</option>
+            <option value="oldest">Oldest First</option>
+        </select>
+    </form>
 </div>
+
+
+
 
 <table class="table table-striped table-bordered table-hover">
     <thead class="thead-dark">
@@ -52,19 +52,20 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model) {
+        @foreach (var item in Model)
+        {
             <tr>
                 <td>@Html.DisplayFor(modelItem => item.Title)</td>
                 <td>@Html.DisplayFor(modelItem => item.Author)</td>
                 <td>@Html.DisplayFor(modelItem => item.Description)</td>
                 <td>@Html.DisplayFor(modelItem => item.ISBN)</td>
                 <td>@Html.DisplayFor(modelItem => item.DatePublished)</td>
-               <td>@(item.Price >= 0 ? string.Format("€{0:N2}", item.Price) : "No price available")</td>
+                <td>@(item.Price >= 0 ? string.Format("€{0:N2}", item.Price) : "No price available")</td>
 
                 <td><i class="@hasImage(item)"></i></td>
                 <td>
                     <div class="mr-2" role="group">
-                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning" >
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">
                             <i class="fas fa-edit"></i> Edit
                         </a>
                         <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">
@@ -79,4 +80,12 @@
         }
     </tbody>
 </table>
+
+<script>
+    function handleSortChange() {
+        var selectedOption = document.getElementById("sort").value;
+        document.getElementById("sortOption").value = selectedOption;
+        document.getElementById("filterForm").submit();
+    }
+</script>
 

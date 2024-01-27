@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using BOOKS.Areas.Identity.Data;
 using Books.Models;
 
-namespace BOOKS.Controllers
+namespace Books.Controllers
 {
     [Authorize(Roles = "Admin")]
     public class AdminController : Controller

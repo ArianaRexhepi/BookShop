@@ -25,8 +25,21 @@
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark @(ViewContext.RouteData.Values["Controller"].ToString().Equals("Store", StringComparison.OrdinalIgnoreCase) && ViewContext.RouteData.Values["Action"].ToString().Equals("Index", StringComparison.OrdinalIgnoreCase) ? "active" : "")"
-                                asp-area="" asp-controller="Store" asp-action="Index">Home</a>
+                                asp-area="" asp-controller="Store" asp-action="Index">Books</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark @(ViewContext.RouteData.Values["Controller"].ToString().Equals("Store", StringComparison.OrdinalIgnoreCase) && ViewContext.RouteData.Values["Action"].ToString().Equals("Bestseller", StringComparison.OrdinalIgnoreCase) ? "active" : "")"
+                                asp-area="" asp-controller="Store" asp-action="Index">Bestseller</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark @(ViewContext.RouteData.Values["Controller"].ToString().Equals("Store", StringComparison.OrdinalIgnoreCase) && ViewContext.RouteData.Values["Action"].ToString().Equals("Magazines", StringComparison.OrdinalIgnoreCase) ? "active" : "")"
+                                asp-area="" asp-controller="Store" asp-action="Index">Magazines</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark @(ViewContext.RouteData.Values["Controller"].ToString().Equals("Store", StringComparison.OrdinalIgnoreCase) && ViewContext.RouteData.Values["Action"].ToString().Equals("Audiobooks", StringComparison.OrdinalIgnoreCase) ? "active" : "")"
+                                asp-area="" asp-controller="Store" asp-action="Index">Audiobooks</a>
+                        </li>
+
 
 
                         @* @if(User.IsInRole("Admin"))
@@ -59,8 +72,10 @@
                         @* } *@
                     </ul>
                     <partial name="_LoginPartial" />
+                    @if(User.Identity.IsAuthenticated){
                     <a class="nav-link text-dark float-right" asp-area="" asp-controller="Cart" asp-action="Index"><i
                             class="fa-solid fa-cart-shopping"></i></a>
+                            }
                 </div>
             </div>
         </nav>
