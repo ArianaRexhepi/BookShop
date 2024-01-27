@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Books.Models;
-using BOOKS.Areas.Identity.Data;
+using Books.Data;
+
 
 public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {

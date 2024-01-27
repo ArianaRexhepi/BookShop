@@ -18,7 +18,7 @@ namespace Books.Migrations
                 .HasAnnotation("ProductVersion", "6.0.24")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("BOOKS.Areas.Identity.Data.ApplicationUser", b =>
+            modelBuilder.Entity("Books.Data.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("varchar(255)");
@@ -484,7 +484,7 @@ namespace Books.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("BOOKS.Areas.Identity.Data.ApplicationUser", null)
+                    b.HasOne("Books.Data.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -493,7 +493,7 @@ namespace Books.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("BOOKS.Areas.Identity.Data.ApplicationUser", null)
+                    b.HasOne("Books.Data.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -508,7 +508,7 @@ namespace Books.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BOOKS.Areas.Identity.Data.ApplicationUser", null)
+                    b.HasOne("Books.Data.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -517,7 +517,7 @@ namespace Books.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("BOOKS.Areas.Identity.Data.ApplicationUser", null)
+                    b.HasOne("Books.Data.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

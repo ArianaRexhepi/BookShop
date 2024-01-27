@@ -1,12 +1,10 @@
 using System.Text;
 using Books.Data;
 using Books.Models;
-using BOOKS.Areas.Identity.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Extensions.DependencyInjection;
-
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,10 +29,6 @@ builder.Services.AddScoped<Cart>(sp => Cart.GetCart(sp));
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
-builder.Services.AddDbContext<IdentityDbContext>(options =>
-
-
-    options.UseSqlite(builder.Configuration.GetConnectionString("IdentityDbContext")));
 
 builder.Services.AddDistributedMemoryCache();
 

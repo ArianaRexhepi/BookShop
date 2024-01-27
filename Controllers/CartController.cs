@@ -80,5 +80,11 @@ namespace Books.Controllers
         {
             return _context.Books.FirstOrDefault(b => b.Id == id);
         }
+        public Bestseller GetBestsellerById(int id)
+        {
+            return _context.Bestseller.FirstOrDefault(b => b.Id == id);
+        }
+        
+
     }
 }

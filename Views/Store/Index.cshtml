@@ -152,25 +152,7 @@
         </form>
     </div>
 </div>
- <div class="form-check form-check-inline mr-3">
-            <input type="checkbox" id="under50" name="under50" class="form-check-input">
-            <label class="form-check-label" for="under50">Under €50</label>
-        </div>
 
-        <div class="form-check form-check-inline mr-3">
-            <input type="checkbox" id="50to100" name="50to100" class="form-check-input">
-            <label class="form-check-label" for="50to100">€50 - $100</label>
-        </div>
-
-        <div class="form-check form-check-inline mr-3">
-            <input type="checkbox" id="over100" name="over100" class="form-check-input">
-            <label class="form-check-label" for="over100">Over €100</label>
-        </div>
-
-        <button type="submit" class="btn btn-primary btn-sm">Apply Filters</button>
-
-        <!-- Clear Filters button -->
-        <button type="button" class="btn btn-secondary btn-sm ml-2" onclick="clearFilters()">Clear Filters</button>
 
 <div class="card-container">
     @foreach (var book in Model)
@@ -218,4 +200,3 @@
         </li>
     </ul>
 </div>
-<script></script>

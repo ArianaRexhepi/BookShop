@@ -14,13 +14,16 @@
             return "fa-solid fa-x";
         }
     }
-     // Get the value of a specific query parameter
-    string paramValue = Context.Request.Query["sort"];
+    // Get the value of a specific query parameter
+    @* string paramValue = Context.Request.QueryString["iframe"] == "1" ? "iframe" : string.Empty; *@
 
     // Check if a query parameter exists
-    bool paramExists = Context.Request.Query.ContainsKey("sort");
+    @* bool paramExists = Context.Request.Query.ContainsKey("sort");
 
-    string selectSort = paramExists?paramValue: "all";
+    string selectSort = paramExists ? paramValue : "all";
+    Console.WriteLine("paramValue", paramValue);
+    Console.WriteLine("selectSort", selectSort); *@
+
 }
 
 
@@ -36,7 +39,7 @@
         <input type="hidden" id="sortOption" name="sort" value="" />
 
         <label for="sort" class="mr-2">Sort by Published Date:</label>
-        <select id="sort" value="@selectSort" class="custom-select mr-3" onchange="handleSortChange()">
+        <select id="sort"  class="custom-select mr-3" onchange="handleSortChange()">
             <option value="all">All</option>
             <option value="newest">Newest First</option>
             <option value="oldest">Oldest First</option>
@@ -127,4 +130,3 @@
         document.getElementById("filterForm").submit();
     }
 </script>
-
