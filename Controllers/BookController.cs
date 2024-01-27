@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Books.Models;
 using Microsoft.AspNetCore.Authorization;
+using Books.Data;
 
 namespace Books.Controllers
 {
@@ -42,6 +43,7 @@ namespace Books.Controllers
                 
                 books = books.Where(b => b.Price <= max);
             }
+            
 
             return View(await books.OrderByDescending(a => a.DatePublished).ToListAsync());
         }

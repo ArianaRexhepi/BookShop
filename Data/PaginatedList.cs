@@ -1,10 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace Books.Areas.Identity.Data
+namespace Books.Data
 {
     public class PaginatedList<T> : List<T>
     {
@@ -19,32 +15,14 @@ namespace Books.Areas.Identity.Data
             this.AddRange(items);
         }
 
-        public bool HasPreviousPage
-        {
-            get
-            {
-                return (PageIndex > 1);
-            }
-        }
-
-        public bool HasNextPage
-        {
-            get
-            {
-                return (PageIndex < TotalPages);
-            }
-        }
+        public bool HasPreviousPage => (PageIndex > 1);
+        public bool HasNextPage => (PageIndex < TotalPages);
 
         public static async Task<PaginatedList<T>> CreateAsync(IQueryable<T> source, int pageIndex, int pageSize)
         {
             var count = await source.CountAsync();
             var items = await source.Skip((pageIndex - 1) * pageSize).Take(pageSize).ToListAsync();
             return new PaginatedList<T>(items, count, pageIndex, pageSize);
-        }
-
-        internal static async Task<string?> CreateAsync(IQueryable<Models.Book> books, int v, int pageSize)
-        {
-            throw new NotImplementedException();
         }
     }
 }

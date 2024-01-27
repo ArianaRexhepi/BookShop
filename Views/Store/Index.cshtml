@@ -1,4 +1,5 @@
-﻿@model IEnumerable<Books.Models.Book>
+﻿@using Books.Data;
+@model PaginatedList<Books.Models.Book>
 
 @{
     ViewData["Title"] = "Bookstore";
@@ -149,13 +150,39 @@
                     <h5 class="card-title">@book.Title</h5>
                     <p class="card-test">By @book.Author</p>
                     <p class="card-text">Price: @string.Format("€{0:N2}", book.Price)</p>
-                    <div class="card-actions">
-                        <a asp-controller="Cart" asp-action="AddToCart" asp-route-id="@book.Id" class="btn btn-primary">
-                            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
-                        </a>
-                    </div>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <div class="card-actions">
+                            <a asp-controller="Cart" asp-action="AddToCart" asp-route-id="@book.Id" class="btn btn-primary">
+                                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                            </a>
+                        </div>
+                    }
                 </div>
             </a>
         </div>
     }
+</div>
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+
+<div class="pr-4">
+    <ul style="display: flex; float:right; list-style: none; border-radius: .35rem">
+        <li class="paginate_button page-item previous" id="dataTable_previous">
+            <a asp-action="Index" asp-route-sortOrder="@ViewData["CurrentSort"]"
+                asp-route-pageNumber="@(Model.PageIndex - 1)" asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                aria-controls="dataTable" data-dt-idx="1" class="btn page-link @prevDisabled">
+                Previous
+            </a>
+        </li>
+        <li class="paginate_button page-item next" id="dataTable_next">
+            <a asp-action="Index" asp-route-sortOrder="@ViewData["CurrentSort"]"
+                asp-route-pageNumber="@(Model.PageIndex + 1)" asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                aria-controls="dataTable" data-dt-idx="2" class="btn page-link @nextDisabled">
+                Next
+            </a>
+        </li>
+    </ul>
 </div>
