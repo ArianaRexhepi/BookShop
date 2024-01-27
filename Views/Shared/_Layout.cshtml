@@ -29,15 +29,15 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark @(ViewContext.RouteData.Values["Controller"].ToString().Equals("Store", StringComparison.OrdinalIgnoreCase) && ViewContext.RouteData.Values["Action"].ToString().Equals("Bestseller", StringComparison.OrdinalIgnoreCase) ? "active" : "")"
-                                asp-area="" asp-controller="Store" asp-action="Index">Bestseller</a>
+                                asp-area="" asp-controller="BStore" asp-action="Index">Bestseller</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark @(ViewContext.RouteData.Values["Controller"].ToString().Equals("Store", StringComparison.OrdinalIgnoreCase) && ViewContext.RouteData.Values["Action"].ToString().Equals("Magazines", StringComparison.OrdinalIgnoreCase) ? "active" : "")"
-                                asp-area="" asp-controller="Store" asp-action="Index">Magazines</a>
+                                asp-area="" asp-controller="MagStore" asp-action="Index">Magazines</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark @(ViewContext.RouteData.Values["Controller"].ToString().Equals("Store", StringComparison.OrdinalIgnoreCase) && ViewContext.RouteData.Values["Action"].ToString().Equals("Audiobooks", StringComparison.OrdinalIgnoreCase) ? "active" : "")"
-                                asp-area="" asp-controller="Store" asp-action="Index">Audiobooks</a>
+                                asp-area="" asp-controller="AudStore" asp-action="Index">Audiobooks</a>
                         </li>
 
 

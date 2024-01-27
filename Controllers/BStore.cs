@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Books.Data;
@@ -8,16 +7,15 @@ using Books.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
 
 namespace Books.Controllers
 {
     [AllowAnonymous]
-    public class MagStoreController : Controller
+    public class BStoreController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public MagStoreController(ApplicationDbContext context)
+        public BStoreController(ApplicationDbContext context)
         {
             _context = context;
         }
@@ -25,7 +23,7 @@ namespace Books.Controllers
         [Authorize]
         public async Task<IActionResult> Index(string searchString, string minPrice, string maxPrice, int? pageNumber)
         {
-            var books = _context.Magazines.Select(b => b);
+            var books = _context.Bestseller.Select(b => b);
 
             if (!string.IsNullOrEmpty(searchString))
             {
@@ -59,7 +57,7 @@ namespace Books.Controllers
             }
 
             int pageSize = 4;
-            return View(await PaginatedList<Magazines>.CreateAsync(books.AsNoTracking(), pageNumber ?? 1, pageSize));
+            return View(await PaginatedList<Bestseller>.CreateAsync(books.AsNoTracking(), pageNumber ?? 1, pageSize));
             // return View(await books.ToListAsync());
         }
 
@@ -70,7 +68,7 @@ namespace Books.Controllers
                 return NotFound();
             }
 
-            var book = await _context.Magazines
+            var book = await _context.Bestseller
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (book == null)
             {

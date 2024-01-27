@@ -29,17 +29,31 @@ namespace Books.Controllers
             {
                 books = books.Where(b => b.Title.Contains(searchString) || b.Author.Contains(searchString));
             }
-            if (!string.IsNullOrEmpty(minPrice))
-            {
-                var min = int.Parse(minPrice);
+            // if (!string.IsNullOrEmpty(minPrice))
+            // {
+            //     var min = int.Parse(minPrice);
 
-                books = books.Where(b => b.Price >= min);
+            //     books = books.Where(b => b.Price >= min);
+            // }
+            // if (!string.IsNullOrEmpty(maxPrice))
+            // {
+            //     var max = int.Parse(maxPrice);
+
+            //     books = books.Where(b => b.Price <= max);
+            // }
+            if (Request.Query.ContainsKey("under50"))
+            {
+                books = books.Where(b => b.Price < 50);
             }
-            if (!string.IsNullOrEmpty(maxPrice))
-            {
-                var max = int.Parse(maxPrice);
 
-                books = books.Where(b => b.Price <= max);
+            if (Request.Query.ContainsKey("50to100"))
+            {
+                books = books.Where(b => b.Price >= 50 && b.Price <= 100);
+            }
+
+            if (Request.Query.ContainsKey("over100"))
+            {
+                books = books.Where(b => b.Price > 100);
             }
 
             int pageSize = 4;

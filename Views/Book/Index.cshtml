@@ -14,7 +14,15 @@
             return "fa-solid fa-x";
         }
     }
+     // Get the value of a specific query parameter
+    string paramValue = Context.Request.Query["sort"];
+
+    // Check if a query parameter exists
+    bool paramExists = Context.Request.Query.ContainsKey("sort");
+
+    string selectSort = paramExists?paramValue: "all";
 }
+
 
 <div class="content text-center">
     <h1>Books</h1>
@@ -24,16 +32,39 @@
 </div>
 
 <div class="sorting-filter">
-    <form id="filterForm" asp-action="Index" asp-controller="Book" method="get">
+    <form id="filterForm" asp-action="Index" asp-controller="Book" method="get" class="d-flex align-items-center">
         <input type="hidden" id="sortOption" name="sort" value="" />
+
         <label for="sort" class="mr-2">Sort by Published Date:</label>
-        <select id="sort" class="custom-select" onchange="handleSortChange()">
+        <select id="sort" value="@selectSort" class="custom-select mr-3" onchange="handleSortChange()">
             <option value="all">All</option>
             <option value="newest">Newest First</option>
             <option value="oldest">Oldest First</option>
         </select>
+
+        <div class="form-check form-check-inline mr-3">
+            <input type="checkbox" id="under50" name="under50" class="form-check-input">
+            <label class="form-check-label" for="under50">Under €50</label>
+        </div>
+
+        <div class="form-check form-check-inline mr-3">
+            <input type="checkbox" id="50to100" name="50to100" class="form-check-input">
+            <label class="form-check-label" for="50to100">€50 - $100</label>
+        </div>
+
+        <div class="form-check form-check-inline mr-3">
+            <input type="checkbox" id="over100" name="over100" class="form-check-input">
+            <label class="form-check-label" for="over100">Over €100</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-sm">Apply Filters</button>
+
+        <!-- Clear Filters button -->
+        <button type="button" class="btn btn-secondary btn-sm ml-2" onclick="clearFilters()">Clear Filters</button>
     </form>
 </div>
+
+
 
 
 
@@ -82,6 +113,14 @@
 </table>
 
 <script>
+    function clearFilters() {
+        document.getElementById("under50").checked = false;
+        document.getElementById("50to100").checked = false;
+        document.getElementById("over100").checked = false;
+        document.getElementById("sort").value = "all";
+        document.getElementById("filterForm").submit();
+    }
+
     function handleSortChange() {
         var selectedOption = document.getElementById("sort").value;
         document.getElementById("sortOption").value = selectedOption;

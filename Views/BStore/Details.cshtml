@@ -1,0 +1,54 @@
+﻿@model Books.Models.Bestseller
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="container mt-5">
+    <div class="card shadow-lg">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="@Model.Image" class="card-img rounded-start" alt="Book Image">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h2 class="card-title mt-3">@Model.Title</h2>
+                    <h5 class="card-title mt-3">
+                        <strong>Author:</strong> @Model.Author
+                    </h5>
+                    <p class="text-muted mt-5">Description:</p>
+                    <p class="my-4">@Model.Description</p>
+                    <p class="card-text">
+                    <div class="d-flex flex-column align-items-end mt-5">
+                        <h6 class="card-text text-right">
+                            Price:
+                            @if (Model?.Price != null)
+                            {
+                                <span><strong>@string.Format("€{0:N2}", Model.Price)</strong></span>
+                            }
+                            else
+                            {
+                                <span>No price available</span>
+                            }
+                        </h6>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <a asp-controller="Cart" asp-action="AddToCart" asp-route-id="@Model.Id" class="btn btn-outline-primary store-btn">
+                                <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                            </a>
+                        }
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-6">
+                            <p class="text-muted">ISBN: <span>@Model.ISBN</span></p>
+                        </div>
+                        <div class="col-md-6 text-md-end">
+                            <p class="text-muted">Date Published: <span>@Model.DatePublished.ToShortDateString()</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
