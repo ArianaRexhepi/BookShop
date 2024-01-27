@@ -11,4 +11,6 @@ dotnet ef database update
 dotnet run
 
 
-our github account:
+our github repository: https://github.com/ArianaRexhepi/BookShop
+our trello board: https://trello.com/b/GKnBQNlG/hyrje-ne-web-programim
+our azure devops board: https://dev.azure.com/ar61313/Books/_workitems/
