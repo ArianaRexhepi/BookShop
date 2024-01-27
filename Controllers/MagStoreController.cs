@@ -58,7 +58,7 @@ namespace Books.Controllers
                 books = books.Where(b => b.Price > 100);
             }
 
-            int pageSize = 4;
+            int pageSize = 6;
             return View(await PaginatedList<Magazines>.CreateAsync(books.AsNoTracking(), pageNumber ?? 1, pageSize));
             // return View(await books.ToListAsync());
         }

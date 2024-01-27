@@ -17,6 +17,70 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/els/Desktop/books/Books/Books/wwwroot/images/book-1.png",
+      "PackagePath": "staticwebassets/images/book-1.png"
+    },
+    {
+      "Id": "/Users/els/Desktop/books/Books/Books/wwwroot/images/book-2.png",
+      "PackagePath": "staticwebassets/images/book-2.png"
+    },
+    {
+      "Id": "/Users/els/Desktop/books/Books/Books/wwwroot/images/book-3.png",
+      "PackagePath": "staticwebassets/images/book-3.png"
+    },
+    {
+      "Id": "/Users/els/Desktop/books/Books/Books/wwwroot/images/book-4.png",
+      "PackagePath": "staticwebassets/images/book-4.png"
+    },
+    {
+      "Id": "/Users/els/Desktop/books/Books/Books/wwwroot/images/book-5.png",
+      "PackagePath": "staticwebassets/images/book-5.png"
+    },
+    {
+      "Id": "/Users/els/Desktop/books/Books/Books/wwwroot/images/book-6.png",
+      "PackagePath": "staticwebassets/images/book-6.png"
+    },
+    {
+      "Id": "/Users/els/Desktop/books/Books/Books/wwwroot/images/book.png",
+      "PackagePath": "staticwebassets/images/book.png"
+    },
+    {
+      "Id": "/Users/els/Desktop/books/Books/Books/wwwroot/images/free-shipping.jpg",
+      "PackagePath": "staticwebassets/images/free-shipping.jpg"
+    },
+    {
+      "Id": "/Users/els/Desktop/books/Books/Books/wwwroot/images/lib.jpg",
+      "PackagePath": "staticwebassets/images/lib.jpg"
+    },
+    {
+      "Id": "/Users/els/Desktop/books/Books/Books/wwwroot/images/returns.png",
+      "PackagePath": "staticwebassets/images/returns.png"
+    },
+    {
+      "Id": "/Users/els/Desktop/books/Books/Books/wwwroot/images/secure.jpg",
+      "PackagePath": "staticwebassets/images/secure.jpg"
+    },
+    {
+      "Id": "/Users/els/Desktop/books/Books/Books/wwwroot/images/shipping.jpg",
+      "PackagePath": "staticwebassets/images/shipping.jpg"
+    },
+    {
+      "Id": "/Users/els/Desktop/books/Books/Books/wwwroot/images/slide1.jpg",
+      "PackagePath": "staticwebassets/images/slide1.jpg"
+    },
+    {
+      "Id": "/Users/els/Desktop/books/Books/Books/wwwroot/images/slide2.jpg",
+      "PackagePath": "staticwebassets/images/slide2.jpg"
+    },
+    {
+      "Id": "/Users/els/Desktop/books/Books/Books/wwwroot/images/slide4.jpg",
+      "PackagePath": "staticwebassets/images/slide4.jpg"
+    },
+    {
+      "Id": "/Users/els/Desktop/books/Books/Books/wwwroot/images/slide5.jpg",
+      "PackagePath": "staticwebassets/images/slide5.jpg"
+    },
+    {
       "Id": "/Users/els/Desktop/books/Books/Books/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

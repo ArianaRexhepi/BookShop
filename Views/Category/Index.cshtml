@@ -1,0 +1,15 @@
+@using Books.Data;
+@model PaginatedList<Books.Models.Category>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div>
+    <h2>What would you like to read today?</h2>
+    <button type="button" class="btn btn-primary" onclick="window.location='/Store';">Books</button>
+    <button type="button" class="btn btn-success" onclick="window.location='/BStore';">BestSellers</button>
+    <button type="button" class="btn btn-danger" onclick="window.location='/AudStore';">AudioBooks</button>
+    <button type="button" class="btn btn-info" onclick="window.location='/MagStore';">Magazines</button>
+</div>

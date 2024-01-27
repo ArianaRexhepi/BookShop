@@ -22,6 +22,7 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
         public DbSet<Bestseller> Bestseller { get; set; }
         public DbSet<Magazines> Magazines { get; set; }
         public DbSet<Audiobooks> Audiobooks { get; set; }
+        public DbSet<Category> Category { get; set; }
        
         
 
