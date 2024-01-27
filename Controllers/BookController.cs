@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Books.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Books.Controllers
 {
@@ -19,10 +20,30 @@ namespace Books.Controllers
             _context = context;
         }
 
-        // GET: Book
-        public async Task<IActionResult> Index()
+        // GET: Books
+        [Authorize]
+         public async Task<IActionResult> Index(string searchString, string minPrice, string maxPrice)
         {
-            return View(await _context.Books.ToListAsync());
+            var books = _context.Books.Select(b => b);
+
+            if(!string.IsNullOrEmpty(searchString))
+            {
+                books = books.Where(b => b.Title.Contains(searchString) || b.Author.Contains(searchString));
+            }
+            if(!string.IsNullOrEmpty(minPrice))
+            {
+                var min = int.Parse(minPrice);
+                
+                books = books.Where(b => b.Price >= min);
+            }
+             if(!string.IsNullOrEmpty(maxPrice))
+            {
+                var max = int.Parse(maxPrice);
+                
+                books = books.Where(b => b.Price <= max);
+            }
+
+            return View(await books.OrderByDescending(a => a.DatePublished).ToListAsync());
         }
 
         // GET: Book/Details/5

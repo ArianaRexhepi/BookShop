@@ -137,37 +137,7 @@
 <h2 class="my-4 text-center">Book Collection</h2>
 <h6 class="my-4 text-center">We believe that books have the power to inspire, educate, and entertain.</h6>
 
-<form asp-action="Index" class="col-2 my-1 p-2">
-    <div>
-        Search:
-        <div class="my-1">
-            <input type="text" name="searchString" placeholder="Title or Author" class="form-control form-control-long" />
-        </div>
-        <input type="submit" value="Filter" class="btn btn-primary btn-sm" />
-        <a asp-action="Index" class="btn btn-secondary btn-sm float-right">Clear </a>
-    </div>
-</form>
 
-@* <form class="col-12 col-md-8 my-3 p-3" action="/Store" method="post">
-    <div class="d-flex flex-column mb-3"></div>
-        <div class="form-group mb-3">
-            <h6>Search:</h6>
-            <label for="searchString" class="sr-only">Title or Author</label>
-            <input type="text" name="searchString" id="searchString" placeholder="Title or Author" class="form-control form-control-long">
-        </div>
-        <div class="input-group-append">
-                    <button type="submit" class="btn btn-primary">Filter</button>
-                    <a class="btn btn-secondary" href="/Store">Clear</a>
-                </div>
-        @* <div class="my-1">
-            <input type="number" name="minPrice" step="1" placeholder="$min" class="form-control-sm col-5" /> &nbsp;&#8212;&nbsp;<input type="number" name="maxPrice" step="1" placeholder="$max" class="form-control-sm col-5" />
-        </div> *@
-       
-            
-     
-    @* </div>
-    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8B9KIise8u1PpF9tUP9C3Ta4ZznyqwwLIYajXIFCL6JW1r69ArbDBubhtFVlDntoW7a4Sc6Jj3AQFFCf6j8wa1wdW28MsGek-6G1kA6OY-PJBLfwTIVKnVqIDp6LYCS8tAswAHXde6wpp8JpiTansSyV_r-dTzaZa46Wl9EuljPoXfmvog7Hgql0xkKHd_a84Q">
-</form> *@ 
 
 <div class="card-container">
     @foreach (var book in Model)
