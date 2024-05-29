@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kaeZS/BzkdnaTQf8+xnQgTnsTAwGkp7VaVxbb/pKU5rz1oS5wlz0TLDkbAg7nnUJPDrp4ODYY/NEWLObrhCayw==",
+  "dgSpecHash": "reXrXMzRiBH8cE43lgqXCmGAGTi2fecrd7jcpHBDOoqF0cfwpJzDOcrZsvEF26Na9M+CCLYr8m0sgnmcXj+okQ==",
   "success": true,
-  "projectFilePath": "/Users/els/Desktop/books/Books/Books/Books.csproj",
+  "projectFilePath": "/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Books.csproj",
   "expectedPackageFiles": [
     "/Users/els/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/els/.nuget/packages/messagepack/2.1.152/messagepack.2.1.152.nupkg.sha512",

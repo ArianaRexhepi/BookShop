@@ -9,341 +9,341 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Books
 build_property.RootNamespace = Books
-build_property.ProjectDir = /Users/els/Desktop/books/Books/Books/
+build_property.ProjectDir = /Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/els/Desktop/books/Books/Books
+build_property.MSBuildProjectDirectory = /Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/AccessDenied.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9BY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Db25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Db25maXJtRW1haWxDaGFuZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9FeHRlcm5hbExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Gb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Gb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/Lockout.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/Lockout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2Nrb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/Login.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/LoginWith2fa.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/LoginWith2fa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2dpbldpdGgyZmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2dpbldpdGhSZWNvdmVyeUNvZGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/Logout.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvQ2hhbmdlUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvRGVsZXRlUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvRGlzYWJsZTJmYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvRG93bmxvYWRQZXJzb25hbERhdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/Manage/Email.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/Manage/Email.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvRW5hYmxlQXV0aGVudGljYXRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvRXh0ZXJuYWxMb2dpbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvR2VuZXJhdGVSZWNvdmVyeUNvZGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/Manage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvUmVzZXRBdXRoZW50aWNhdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvU2V0UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvU2hvd1JlY292ZXJ5Q29kZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvVHdvRmFjdG9yQXV0aGVudGljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvX1N0YXR1c01lc3NhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/Register.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9SZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9SZXNlbmRFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9SZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9SZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9fU3RhdHVzTWVzc2FnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9fVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/Error.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/_ViewImports.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Areas/Identity/Pages/_ViewStart.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Admin/CreateRole.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Admin/CreateRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQ3JlYXRlUm9sZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Admin/EditUsersInRole.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Admin/EditUsersInRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vRWRpdFVzZXJzSW5Sb2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Admin/Roles.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Admin/Roles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vUm9sZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Audiobooks/Create.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Audiobooks/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXVkaW9ib29rcy9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Audiobooks/Delete.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Audiobooks/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXVkaW9ib29rcy9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Audiobooks/Details.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Audiobooks/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXVkaW9ib29rcy9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Audiobooks/Edit.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Audiobooks/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXVkaW9ib29rcy9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Audiobooks/Index.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Audiobooks/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXVkaW9ib29rcy9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/AudStore/Details.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/AudStore/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXVkU3RvcmUvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/AudStore/Index.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/AudStore/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXVkU3RvcmUvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Bestseller/Create.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Bestseller/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmVzdHNlbGxlci9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Bestseller/Delete.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Bestseller/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmVzdHNlbGxlci9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Bestseller/Details.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Bestseller/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmVzdHNlbGxlci9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Bestseller/Edit.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Bestseller/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmVzdHNlbGxlci9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Bestseller/Index.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Bestseller/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmVzdHNlbGxlci9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Book/Create.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Book/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9vay9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Book/Delete.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Book/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9vay9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Book/Details.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Book/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9vay9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Book/Edit.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Book/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9vay9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Book/Index.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Book/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9vay9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/BStore/Details.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/BStore/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQlN0b3JlL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/BStore/Index.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/BStore/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQlN0b3JlL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Cart/Index.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FydC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Category/Index.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Home/Index.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Home/Privacy.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Magazines/Create.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Magazines/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFnYXppbmVzL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Magazines/Delete.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Magazines/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFnYXppbmVzL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Magazines/Details.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Magazines/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFnYXppbmVzL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Magazines/Edit.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Magazines/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFnYXppbmVzL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Magazines/Index.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Magazines/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFnYXppbmVzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/MagStore/Details.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/MagStore/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFnU3RvcmUvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/MagStore/Index.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/MagStore/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFnU3RvcmUvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Order/Checkout.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Order/Checkout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvQ2hlY2tvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Order/CheckOutComplete.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Order/CheckOutComplete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvQ2hlY2tPdXRDb21wbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Shared/Error.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Shared/_LoginPartial.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Store/Details.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Store/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RvcmUvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Store/Index.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Store/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RvcmUvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/_ViewImports.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/_ViewStart.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/els/Desktop/books/Books/Books/Views/Shared/_Layout.cshtml]
+[/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-bwcywwsvlv

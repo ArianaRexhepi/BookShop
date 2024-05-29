@@ -11,6 +11,9 @@ namespace Books.Data
     {
          public static async Task SeedAdminAsync(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
         {
+            if(userManager.Users.All(a => a.Email == "festar@gmail.com")){
+                
+            }
             if (!roleManager.Roles.Any())
             {
 

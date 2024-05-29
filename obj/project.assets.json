@@ -11401,11 +11401,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/els/Desktop/books/Books/Books/Books.csproj",
+      "projectUniqueName": "/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Books.csproj",
       "projectName": "Books",
-      "projectPath": "/Users/els/Desktop/books/Books/Books/Books.csproj",
+      "projectPath": "/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/Books.csproj",
       "packagesPath": "/Users/els/.nuget/packages/",
-      "outputPath": "/Users/els/Desktop/books/Books/Books/obj/",
+      "outputPath": "/Users/els/Desktop/UBT-2223 copy/Finished courses/SEMESTRI 5/Hyrje ne Ueb Pogramim/books/Books/Books/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/els/.nuget/NuGet/NuGet.Config"
