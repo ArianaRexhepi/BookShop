@@ -1,40 +1,48 @@
-.a-cleanup{
-    color:inherit;
+.a-cleanup {
+    color: inherit;
     text-decoration: none;
 }
 
-.a-cleanup:hover{
+.a-cleanup:hover {
     text-decoration: none;
     color: inherit;
 }
-.store-btn{
-    transition: all 0.2 ease;
+
+.store-btn {
+    transition: all 0.2s ease;
 }
-.store-btn:hover{
+
+.store-btn:hover {
     background-color: #1a3446;
     border: 2px solid #1a3446;
 }
-input[type-number]::-webkit-inner-spin-button,
-input[type-number]::-webkit-inner-spin-button{
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-.form-control-long{
-    width: 600px;
+
+.form-control-long {
+    width: 100%;
+    max-width: 600px;
 }
- .nav-link.active {
+
+.nav-link.active {
     background-color: antiquewhite;
 }
 
 .dropdown-item.active {
-    
+    /* Add styles for active dropdown items if needed */
 }
+
 .sorting-filter {
     margin-bottom: 15px;
 }
 
 #sort {
-    width: 200px; 
+    width: 100%;
+    max-width: 200px;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -51,6 +59,7 @@ input[type-number]::-webkit-inner-spin-button{
 }
 
 #sort::after {
+    content: "";
     position: absolute;
     top: 50%;
     right: 10px;
@@ -67,37 +76,49 @@ input[type-number]::-webkit-inner-spin-button{
     background-color: #007bff;
     color: #fff;
 }
-.icons-container{
+
+.icons-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap:1.5rem;
+    gap: 1.5rem;
 }
 
-.icons-container .icons{
+.icons-container .icons {
     display: flex;
     align-items: center;
-    gap:1.5rem;
-    padding:2rem 0;
+    gap: 1.5rem;
+    padding: 2rem 0;
 }
 
-.icons-container .icons i{
+.icons-container .icons i {
     font-size: 3.5rem;
-    color:var(--green);
+    color: var(--green);
 }
 
-.icons-container .icons h3{
+.icons-container .icons h3 {
     font-size: 2.2rem;
-    color:var(--black);
-    padding-bottom: .5rem;
+    color: var(--black);
+    padding-bottom: 0.5rem;
 }
 
-.icons-container .icons p{
+.icons-container .icons p {
     font-size: 1.4rem;
-    color:var(--light-color);
+    color: var(--light-color);
 }
 
+/* @media screen and (max-width: 768px) {
+    .icons-container {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+} */
 
-
-
-
-
+/* @media screen and (max-width: 600px) {
+    .icons-container {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+} */
+/* @media screen and (max-width: 480px) {
+    #sort {
+        max-width: 150px;
+    }
+} */

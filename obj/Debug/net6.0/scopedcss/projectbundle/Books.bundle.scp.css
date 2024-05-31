@@ -48,3 +48,68 @@ button.accept-policy[b-bwcywwsvlv] {
   line-height: 60px;
 }
 
+/* Responsive Styles */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  a.navbar-brand[b-bwcywwsvlv] {
+    font-size: 1rem;
+  }
+  
+  .footer[b-bwcywwsvlv] {
+    font-size: 0.875rem;
+    line-height: 40px;
+  }
+
+  button.accept-policy[b-bwcywwsvlv] {
+    font-size: 0.875rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  a.navbar-brand[b-bwcywwsvlv] {
+    font-size: 1.25rem;
+  }
+
+  .footer[b-bwcywwsvlv] {
+    font-size: 1rem;
+    line-height: 50px;
+  }
+
+  button.accept-policy[b-bwcywwsvlv] {
+    font-size: 1rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  a.navbar-brand[b-bwcywwsvlv] {
+    font-size: 1.5rem;
+  }
+
+  .footer[b-bwcywwsvlv] {
+    font-size: 1.125rem;
+    line-height: 55px;
+  }
+
+  button.accept-policy[b-bwcywwsvlv] {
+    font-size: 1.125rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+  a.navbar-brand[b-bwcywwsvlv] {
+    font-size: 1.75rem;
+  }
+
+  .footer[b-bwcywwsvlv] {
+    font-size: 1.25rem;
+    line-height: 60px;
+  }
+
+  button.accept-policy[b-bwcywwsvlv] {
+    font-size: 1.25rem;
+  }
+}
